@@ -1,0 +1,23 @@
+.header{
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    top: 0;
+    width: 100vw;
+    height: 8px*10;
+    padding: 8px;
+    background: #fff8dc;
+    z-index: 99;
+    .settings{
+        display:grid;
+        justify-items: end;
+    }
+    .settipagengs{
+        display:grid;
+        justify-items: center;
+    }
+    .logo{
+        display:grid;
+        justify-items: start;
+    }
+}
