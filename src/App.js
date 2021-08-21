@@ -35,6 +35,8 @@ import MoodStrip from './components/MoodStrip/MoodStrip';
       //calling categories API 🕊   and parsing
       const genres = await categories.json();
       console.log(genres.categories.items);
+      //
+      //CATEGORY ARRAY
       return genres.categories.items;
     }
 
@@ -52,6 +54,8 @@ import MoodStrip from './components/MoodStrip/MoodStrip';
       //calling playlist API 🕊   and parsing
       const playlist = await result.json();
       console.log(playlist);
+      //
+      //PLAYLIST ARRAY
       return playlist;
     }
     
@@ -59,14 +63,17 @@ import MoodStrip from './components/MoodStrip/MoodStrip';
 
 function App() {
 
+  // 📦 STATES
+
+  // view
   const [isExpandView, setIsExpandView] = useState(true)
   const [viewClass, setViewClass] = useState('')
-
+  // model
   const [isExpandModel, setIsExpandModel] = useState(true)
   const [modelClass, setModelClass] = useState('')
-
+  //Genres
   const [genres, setGenres] = useState([])
-
+//
   const [currentPlaylist, setCurrentPlaylist] = useState([]);
   const [currentPlaylistTracks, setCurrentPlaylistTracks] = useState([]);
   const [playlistTracksHtml, setPlaylistTracksHtml] = useState();
