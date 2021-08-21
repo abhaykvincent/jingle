@@ -58,10 +58,7 @@ import MoodStrip from './components/MoodStrip/MoodStrip';
       //PLAYLIST ARRAY
       return playlist;
     }
-    function expandView(){
-      setIsExpandView(!isExpandView)
-      setViewClass(isExpandView ? "expand" : '')
-    }
+    
 
 
 function App() {
@@ -76,11 +73,18 @@ function App() {
   const [modelClass, setModelClass] = useState('')
   //Genres
   const [genres, setGenres] = useState([])
-//
+  //
   const [currentPlaylist, setCurrentPlaylist] = useState([]);
   const [currentPlaylistTracks, setCurrentPlaylistTracks] = useState([]);
   const [playlistTracksHtml, setPlaylistTracksHtml] = useState();
 
+  //FUNCTIONS
+  const expandView =  () => {
+    // 🔁 expand state TRANSPOSED
+    setIsExpandView(!isExpandView)
+    // reaction class CHANGE
+    setViewClass(isExpandView ? "expand" : '')
+  }
 
   useEffect(() => {
     // 📦  Storing genre list for set state
@@ -104,14 +108,15 @@ function App() {
     return <div className="genre"
       onClick={()=>{
           expandView();
-            console.log(genre)
+          console.log(genre)
+          // setSTATE current playlist to clicked genre
           setCurrentPlaylist(genre);
-
-          const getttt = async () => {
+          //  GET  playlist 
+          const getPlaylist = async () => {
             const playlistt = await __getPlayList(genre.id);
             return playlistt;
           }
-          getttt().then((playlisttt)=>{
+          getPlaylist().then((playlisttt)=>{
             let playlistTracks = playlisttt.playlists.items
             console.log(playlistTracks)
             setCurrentPlaylistTracks(playlistTracks);
