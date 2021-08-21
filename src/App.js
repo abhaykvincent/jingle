@@ -24,17 +24,21 @@ import MoodStrip from './components/MoodStrip/MoodStrip';
         return token;
     }
     const __getGenres = async () => {
+      // receving token from spotify
       const token = await _getToken();
 
-      const result = await fetch(`https://api.spotify.com/v1/browse/categories?locale=sv_US`, {
-            method: 'GET',
-            headers: { 'Authorization' : 'Bearer ' + token}
-        });
+      // fetch call - categories
+      const categories = await fetch(`https://api.spotify.com/v1/browse/categories?locale=sv_US`, {
+        method: 'GET',
+        headers: { 'Authorization' : 'Bearer ' + token}
+      });
 
-        const genres = await result.json();
-        console.log(genres.categories.items);
-        return genres.categories.items;
+      //calling categories API  and parsing
+      const genres = await categories.json();
+      console.log(genres.categories.items);
+      return genres.categories.items;
     }
+
     const __getPlayList = async (category_id) => {
       const token = await _getToken();
       const result = await fetch(`https://api.spotify.com/v1/browse/categories/${category_id}/playlists`, {
@@ -66,7 +70,6 @@ function App() {
 
   useEffect(() => {
 
-   __getGenres()
     const gettt = async () => {
       const genress = await __getGenres();
 
