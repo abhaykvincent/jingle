@@ -116,8 +116,8 @@ function App() {
             const playlistt = await __getPlayList(genre.id);
             return playlistt;
           }
-          getPlaylist().then((playlisttt)=>{
-            let playlistTracks = playlisttt.playlists.items
+          getPlaylist().then((playlistData)=>{
+            let playlistTracks = playlistData.playlists.items
             console.log(playlistTracks)
             setCurrentPlaylistTracks(playlistTracks);
 
