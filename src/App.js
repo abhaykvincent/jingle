@@ -47,7 +47,7 @@ import MoodStrip from './components/MoodStrip/MoodStrip';
     
 
 
-    __getGenres()
+   console.log(__getGenres())
 function App() {
 
   const [isExpandView, setIsExpandView] = useState(true)
