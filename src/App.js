@@ -39,7 +39,6 @@ import MoodStrip from './components/MoodStrip/MoodStrip';
       //CATEGORY ARRAY
       return genres.categories.items;
     }
-
     const __getPlayList = async (category_id) => {
 
       // #️⃣  receving token from spotify
@@ -79,11 +78,19 @@ function App() {
   const [playlistTracksHtml, setPlaylistTracksHtml] = useState();
 
   //FUNCTIONS
+
   const expandView =  () => {
     // 🔁 expand state TRANSPOSED
     setIsExpandView(!isExpandView)
     // reaction class CHANGE
     setViewClass(isExpandView ? "expand" : '')
+  }
+  const expandModel =  () => {
+    // 🔁 expand state TRANSPOSED
+    setIsExpandModel(!isExpandModel)
+    // reaction class CHANGE
+    setModelClass(isExpandModel ? "expand" : '')
+
   }
 
   useEffect(() => {
@@ -116,14 +123,18 @@ function App() {
             const playlistt = await __getPlayList(genre.id);
             return playlistt;
           }
-          getPlaylist().then((playlistData)=>{
+          // 🧲 get playlist call
+          getPlaylist()
+          .then((playlistData)=>{
             let playlistTracks = playlistData.playlists.items
-            console.log(playlistTracks)
+            // 📦 setSTATE Playlist tracks data 
             setCurrentPlaylistTracks(playlistTracks);
 
+            // 💀 Playlist Tracks - COMPONENT
             const playlistTracksHtmlTemp = playlistTracks.map(track => {
               return <TrackSmallThumbnail track={track}/>
             })
+            // 📦 setSTATE Playlist Track markup
             setPlaylistTracksHtml(playlistTracksHtmlTemp)
           })
           
@@ -132,17 +143,14 @@ function App() {
         {genre.name}
       </div>
   })
+
   return (
     <div className="App">
       <div className="home">
 
         <div className="search">
           <input type="text" name="Search" id="search-home" 
-          onClick={()=>{
-            
-            setIsExpandView(!isExpandView);
-            setViewClass(isExpandView ? "expand" : '');
-        }}/>
+          onClick={()=>{expandView();}}/>
         </div>
         <div className="genres">
           <div className="label-sub"><h3>Top Genres</h3></div>
@@ -160,28 +168,19 @@ function App() {
       <div className={`view playlist ${viewClass}`}>
         <div className="view__head">
           <div className="back" 
-          onClick={()=>{
-            setIsExpandView(!isExpandView)
-            setViewClass(isExpandView ? "expand" : '')
-        }}>)</div>
+          onClick={()=>{expandView();}}>)</div>
         </div>
         <div className="view__body">
           <div className="playlist" 
-            onClick={()=>{
-              setIsExpandModel(!isExpandModel)
-              setModelClass(isExpandModel ? "expand" : '')
-          }}>
-              {playlistTracksHtml}
+          onClick={()=>{expandModel()}}>
+            {playlistTracksHtml}
           </div>
         </div>
       </div>
       <div className={`model player ${modelClass}`}>
         <div className="model__head">
           <div className="back" 
-          onClick={()=>{
-            setIsExpandModel(!isExpandModel)
-            setModelClass(isExpandModel ? "expand" : '')
-        }}>)</div></div>
+          onClick={()=>{expandModel()}}>)</div></div>
         <div className="model__body">
           <div className="track">
             <div className="album-artwork">
