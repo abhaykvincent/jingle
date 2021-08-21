@@ -30,7 +30,19 @@ import MoodStrip from './components/MoodStrip/MoodStrip';
         });
 
         const genres = await result.json();
+        console.log(genres.categories.items);
         return genres.categories.items;
+    }
+    const __getPlayList = async (category_id) => {
+      const token = await _getToken();
+      const result = await fetch(`https://api.spotify.com/v1/browse/categories/${category_id}/playlists`, {
+            method: 'GET',
+            headers: { 'Authorization' : 'Bearer ' + token}
+        });
+
+        const playlist = await result.json();
+        console.log(playlist);
+        return playlist;
     }
     
 
@@ -45,6 +57,10 @@ function App() {
   const [modelClass, setModelClass] = useState('')
 
   const [genres, setGenres] = useState([])
+
+  const [currentPlaylist, setCurrentPlaylist] = useState([]);
+  const [currentPlaylistTracks, setCurrentPlaylistTracks] = useState([]);
+  const [playlistTracksHtml, setPlaylistTracksHtml] = useState();
 
 
   useEffect(() => {
@@ -64,11 +80,28 @@ function App() {
     }
   }, [])
   const genresHtml = genres.map(genre => {
-    console.log(genre.icons[0].url)
     return <div className="genre"
       onClick={()=>{
           setIsExpandView(!isExpandView)
           setViewClass(isExpandView ? "expand" : '')
+            console.log(genre)
+          setCurrentPlaylist(genre);
+
+          const getttt = async () => {
+            const playlistt = await __getPlayList(genre.id);
+            return playlistt;
+          }
+          getttt().then((playlisttt)=>{
+            let playlistTracks = playlisttt.playlists.items
+            console.log(playlistTracks)
+            setCurrentPlaylistTracks(playlistTracks);
+
+            const playlistTracksHtmlTemp = playlistTracks.map(track => {
+              return <TrackSmallThumbnail track={track}/>
+            })
+            setPlaylistTracksHtml(playlistTracksHtmlTemp)
+          })
+          
       }}
       >
         <div className="genre-icon" style={{backgroundImage: `url(${genre.icons[0].url})`}}></div>
@@ -80,8 +113,8 @@ function App() {
         <div className="search">
           <input type="text" name="Search" id="search-home" 
           onClick={()=>{
-            setIsExpandView(!isExpandView)
-            setViewClass(isExpandView ? "expand" : '')
+            setIsExpandView(!isExpandView);
+            setViewClass(isExpandView ? "expand" : '');
         }}/>
         </div>
         <div className="genres">
@@ -105,31 +138,11 @@ function App() {
         </div>
         <div className="view__body">
           <div className="playlist" 
-    onClick={()=>{
-      setIsExpandModel(!isExpandModel)
-      setModelClass(isExpandModel ? "expand" : '')
-  }}>
-            <TrackSmallThumbnail/>
-            <TrackSmallThumbnail/>
-            <TrackSmallThumbnail/>
-            <TrackSmallThumbnail/>
-            <TrackSmallThumbnail/>
-            <TrackSmallThumbnail/>
-            <TrackSmallThumbnail/>
-            <TrackSmallThumbnail/>
-            <TrackSmallThumbnail/>
-            <TrackSmallThumbnail/>
-            <TrackSmallThumbnail/>
-            <TrackSmallThumbnail/>
-            <TrackSmallThumbnail/>
-            <TrackSmallThumbnail/>
-            <TrackSmallThumbnail/>
-            <TrackSmallThumbnail/>
-            <TrackSmallThumbnail/>
-            <TrackSmallThumbnail/>
-            <TrackSmallThumbnail/>
-            <TrackSmallThumbnail/>
-            <TrackSmallThumbnail/>
+            onClick={()=>{
+              setIsExpandModel(!isExpandModel)
+              setModelClass(isExpandModel ? "expand" : '')
+          }}>
+              {playlistTracksHtml}
           </div>
         </div>
       </div>
@@ -185,14 +198,15 @@ function App() {
     
   );
 }
-function TrackSmallThumbnail() {
+function TrackSmallThumbnail(props) {
+  let track = props.track;
   return (
       
     <div className="track">
     <div className="album-artwork"></div>
     <div className="track-name">
-      <p>Track Name ipsm</p>
-      <p className="artist">Lorem ipsum</p>
+      <p>{track.name}</p>
+      <p className="artist">{track.description}</p>
     </div>
     <div className="play-button">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
