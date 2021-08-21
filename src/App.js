@@ -24,31 +24,35 @@ import MoodStrip from './components/MoodStrip/MoodStrip';
         return token;
     }
     const __getGenres = async () => {
-      // receving token from spotify
+      // #️⃣  receving token from spotify
       const token = await _getToken();
-
-      // fetch call - categories
+      // 🕊 fetch call - categories
       const categories = await fetch(`https://api.spotify.com/v1/browse/categories?locale=sv_US`, {
         method: 'GET',
         headers: { 'Authorization' : 'Bearer ' + token}
       });
 
-      //calling categories API  and parsing
+      //calling categories API 🕊   and parsing
       const genres = await categories.json();
       console.log(genres.categories.items);
       return genres.categories.items;
     }
 
     const __getPlayList = async (category_id) => {
-      const token = await _getToken();
-      const result = await fetch(`https://api.spotify.com/v1/browse/categories/${category_id}/playlists`, {
-            method: 'GET',
-            headers: { 'Authorization' : 'Bearer ' + token}
-        });
 
-        const playlist = await result.json();
-        console.log(playlist);
-        return playlist;
+      // #️⃣  receving token from spotify
+      const token = await _getToken();
+      // 🕊 fetch call - playlist
+      const result = await fetch(`https://api.spotify.com/v1/browse/categories/${category_id}/playlists`, {
+        method: 'GET',
+         headers: { 'Authorization' : 'Bearer ' + token}
+      });
+
+
+      //calling playlist API 🕊   and parsing
+      const playlist = await result.json();
+      console.log(playlist);
+      return playlist;
     }
     
 
