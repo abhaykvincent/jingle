@@ -6,8 +6,11 @@ import MoodStrip from './components/MoodStrip/MoodStrip';
     const clientSecret = '55790833a6d5444fbf93400c887d0144';
 
     // private methods
-    const _getToken = async () => {
 
+    // get TOKEN from spotify account
+    // returns token string
+    const _getToken = async () => {
+        //fetch call
         const result = await fetch('https://accounts.spotify.com/api/token', {
             method: 'POST',
             headers: {
@@ -16,7 +19,6 @@ import MoodStrip from './components/MoodStrip/MoodStrip';
             },
             body: 'grant_type=client_credentials'
         });
-
         const data = await result.json();
         const token =data.access_token;
         return token;
@@ -47,7 +49,6 @@ import MoodStrip from './components/MoodStrip/MoodStrip';
     
 
 
-   console.log(__getGenres())
 function App() {
 
   const [isExpandView, setIsExpandView] = useState(true)
@@ -64,6 +65,8 @@ function App() {
 
 
   useEffect(() => {
+
+   __getGenres()
     const gettt = async () => {
       const genress = await __getGenres();
 
@@ -113,6 +116,7 @@ function App() {
         <div className="search">
           <input type="text" name="Search" id="search-home" 
           onClick={()=>{
+            
             setIsExpandView(!isExpandView);
             setViewClass(isExpandView ? "expand" : '');
         }}/>
