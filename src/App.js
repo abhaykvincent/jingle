@@ -58,7 +58,10 @@ import MoodStrip from './components/MoodStrip/MoodStrip';
       //PLAYLIST ARRAY
       return playlist;
     }
-    
+    function expandView(){
+      setIsExpandView(!isExpandView)
+      setViewClass(isExpandView ? "expand" : '')
+    }
 
 
 function App() {
@@ -100,8 +103,7 @@ function App() {
   const genresHtml = genres.map(genre => {
     return <div className="genre"
       onClick={()=>{
-          setIsExpandView(!isExpandView)
-          setViewClass(isExpandView ? "expand" : '')
+          expandView();
             console.log(genre)
           setCurrentPlaylist(genre);
 
@@ -128,6 +130,7 @@ function App() {
   return (
     <div className="App">
       <div className="home">
+
         <div className="search">
           <input type="text" name="Search" id="search-home" 
           onClick={()=>{
@@ -142,7 +145,9 @@ function App() {
             {genresHtml}
           </div>
         </div>
+        
         <div className="shelf-divider"></div>
+        
         <MoodStrip></MoodStrip>
         <MoodStrip></MoodStrip>
         <MoodStrip></MoodStrip>
