@@ -80,22 +80,22 @@ function App() {
 
 
   useEffect(() => {
-
-    const gettt = async () => {
-      const genress = await __getGenres();
-
-      console.log(genress)
-      return genress;
+    // 📦  Storing genre list for set state
+    const getGenreList = async () => {
+      //🧲 reciving genre list through API  via __getGenres call
+      const genreList = await __getGenres();
+      //console.log(genreList)
+      return genreList;
     }
-    gettt().then((gggg)=>{
-
-        setGenres(gggg)
+    //  📦 genre set state
+    getGenreList().then((genreData)=>{
+      // 📦
+      setGenres(genreData)
     })
-
     return () => {
-      
     }
-  }, [])
+  }, []);
+  
   const genresHtml = genres.map(genre => {
     return <div className="genre"
       onClick={()=>{
