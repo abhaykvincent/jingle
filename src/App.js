@@ -95,7 +95,8 @@ function App() {
     return () => {
     }
   }, []);
-  
+
+  // 💀 Genre strip HTML
   const genresHtml = genres.map(genre => {
     return <div className="genre"
       onClick={()=>{
@@ -119,10 +120,10 @@ function App() {
             setPlaylistTracksHtml(playlistTracksHtmlTemp)
           })
           
-      }}
-      >
+      }}>
         <div className="genre-icon" style={{backgroundImage: `url(${genre.icons[0].url})`}}></div>
-        {genre.name}</div>
+        {genre.name}
+      </div>
   })
   return (
     <div className="App">
