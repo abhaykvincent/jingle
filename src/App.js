@@ -76,6 +76,25 @@ import MoodStrip from './components/MoodStrip/MoodStrip';
       //PLAYLIST ARRAY
       return playlist;
     }
+    // Featured Playlists
+    const __getPlayListById = async (id) => {
+
+    // #️⃣  receving token from spotify
+    const token = await _getToken();
+    // 🕊 fetch call - playlist
+    const result = await fetch(`https://api.spotify.com/v1/playlists/${id}`, {
+      method: 'GET',
+       headers: { 'Authorization' : 'Bearer ' + token}
+    });
+
+    //calling playlist API 🕊   and parsing
+    const playlist = await result.json();
+    //
+    //PLAYLIST ARRAY
+    return playlist;
+  }
+
+    
     
 
 
@@ -98,6 +117,7 @@ function App() {
 
   // Featured Playlist
   const [featuredPlaylist, setFeaturedPlaylist] = useState(null);
+  const [featuredPlaylistHTML, setFeaturedPlaylistHTML] = useState(null);
 
   //FUNCTIONS
 
@@ -142,7 +162,7 @@ function App() {
     //  📦 genre set state
     getFeaturedPlaylist().then((featuredPlaylistData)=>{
       // 📦
-      setFeaturedPlaylist(featuredPlaylistData)
+      setFeaturedPlaylist(featuredPlaylistData.playlists.items)
     })
       
     return () => {
@@ -165,8 +185,30 @@ function App() {
     if( featuredPlaylist === null ){
       // first load, set cart to real initial state, after load
       console.log('Featured Playlist Loading ...')
-    }else
-      console.log(featuredPlaylist )
+    }
+    else{
+      console.log(featuredPlaylist)
+      let featuredPlaylistHTMLtemp =[0]
+       featuredPlaylist.map((data) => {
+
+        const getTracksList = async () => {
+          const tracks = await __getPlayListById(data.id);
+          return tracks.tracks.items;
+        }
+        getTracksList().then(tracks=>{
+          featuredPlaylistHTMLtemp.push( <MoodStrip playlist={data} tracks={tracks} key={data.id}/>)
+          debugger
+          console.log(featuredPlaylistHTMLtemp)
+        }).catch(()=>{
+          console.log('getTracksList() Err')
+        })
+        
+      })
+      console.log(featuredPlaylistHTMLtemp)
+      setFeaturedPlaylistHTML(featuredPlaylistHTMLtemp)
+
+
+    }
   }, [featuredPlaylist]);
 
   // 💀 Genre strip HTML
@@ -219,7 +261,7 @@ function App() {
         </div>
         
         <div className="shelf-divider"></div>
-        {/*  */}
+        {featuredPlaylistHTML}
       </div>
       <div className={`view playlist ${viewClass}`}>
         <div className="view__head">
