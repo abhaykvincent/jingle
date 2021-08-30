@@ -42,7 +42,6 @@ import MoodStrip from './components/MoodStrip/MoodStrip';
       return genres.categories.items;
     }
     const __getPlayList = async (category_id) => {
-
       // #️⃣  receving token from spotify
       const token = await _getToken();
       // 🕊 fetch call - playlist
@@ -71,10 +70,8 @@ import MoodStrip from './components/MoodStrip/MoodStrip';
          headers: { 'Authorization' : 'Bearer ' + token}
       });
 
-
       //calling playlist API 🕊   and parsing
       const playlist = await result.json();
-      console.log(playlist);
       //
       //PLAYLIST ARRAY
       return playlist;
@@ -95,12 +92,12 @@ function App() {
   //Genres
   const [genres, setGenres] = useState([])
   //
-  const [currentPlaylist, setCurrentPlaylist] = useState([]);
+  const [currentPlaylist, setCurrentPlaylist] = useState(null);
   const [currentPlaylistTracks, setCurrentPlaylistTracks] = useState([]);
   const [playlistTracksHtml, setPlaylistTracksHtml] = useState();
 
   // Featured Playlist
-  const [featuredPlaylist, setFeaturedPlaylist] = useState([]);
+  const [featuredPlaylist, setFeaturedPlaylist] = useState(null);
 
   //FUNCTIONS
 
@@ -146,12 +143,31 @@ function App() {
     getFeaturedPlaylist().then((featuredPlaylistData)=>{
       // 📦
       setFeaturedPlaylist(featuredPlaylistData)
-    }).then(()=>{
-      console.log(featuredPlaylist)
     })
+      
     return () => {
     }
   }, []);
+
+  //on featuredPlaylist Stored in State
+  useEffect(() => {
+    // check to see if its the initial state
+    if( currentPlaylist === null ){
+      // first load, set cart to real initial state, after load
+      console.log('Featured Playlist Loading ...')
+    }else
+      console.log(currentPlaylist )
+  }, [currentPlaylist]);
+
+  //on featuredPlaylist Stored in State
+  useEffect(() => {
+    // check to see if its the initial state
+    if( featuredPlaylist === null ){
+      // first load, set cart to real initial state, after load
+      console.log('Featured Playlist Loading ...')
+    }else
+      console.log(featuredPlaylist )
+  }, [featuredPlaylist]);
 
   // 💀 Genre strip HTML
   const genresHtml = genres.map(genre => {
@@ -203,11 +219,7 @@ function App() {
         </div>
         
         <div className="shelf-divider"></div>
-        {/* {
-        featuredPlaylist.map(genre => {
-          debugger
-          return <MoodStrip/>
-        })} */}
+        {/*  */}
       </div>
       <div className={`view playlist ${viewClass}`}>
         <div className="view__head">
