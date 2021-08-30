@@ -6,8 +6,11 @@ import MoodStrip from './components/MoodStrip/MoodStrip';
     const clientSecret = '55790833a6d5444fbf93400c887d0144';
 
     // private methods
-    const _getToken = async () => {
 
+    // get TOKEN from spotify account
+    // returns token string
+    const _getToken = async () => {
+        //fetch call
         const result = await fetch('https://accounts.spotify.com/api/token', {
             method: 'POST',
             headers: {
@@ -16,106 +19,138 @@ import MoodStrip from './components/MoodStrip/MoodStrip';
             },
             body: 'grant_type=client_credentials'
         });
-
         const data = await result.json();
         const token =data.access_token;
         return token;
     }
     const __getGenres = async () => {
+      // #️⃣  receving token from spotify
       const token = await _getToken();
+      // 🕊 fetch call - categories
+      const categories = await fetch(`https://api.spotify.com/v1/browse/categories?locale=sv_US`, {
+        method: 'GET',
+        headers: { 'Authorization' : 'Bearer ' + token}
+      });
 
-      const result = await fetch(`https://api.spotify.com/v1/browse/categories?locale=sv_US`, {
-            method: 'GET',
-            headers: { 'Authorization' : 'Bearer ' + token}
-        });
-
-        const genres = await result.json();
-        console.log(genres.categories.items);
-        return genres.categories.items;
+      //calling categories API 🕊   and parsing
+      const genres = await categories.json();
+      console.log(genres.categories.items);
+      //
+      //CATEGORY ARRAY
+      return genres.categories.items;
     }
     const __getPlayList = async (category_id) => {
-      const token = await _getToken();
-      const result = await fetch(`https://api.spotify.com/v1/browse/categories/${category_id}/playlists`, {
-            method: 'GET',
-            headers: { 'Authorization' : 'Bearer ' + token}
-        });
 
-        const playlist = await result.json();
-        console.log(playlist);
-        return playlist;
+      // #️⃣  receving token from spotify
+      const token = await _getToken();
+      // 🕊 fetch call - playlist
+      const result = await fetch(`https://api.spotify.com/v1/browse/categories/${category_id}/playlists`, {
+        method: 'GET',
+         headers: { 'Authorization' : 'Bearer ' + token}
+      });
+
+
+      //calling playlist API 🕊   and parsing
+      const playlist = await result.json();
+      console.log(playlist);
+      //
+      //PLAYLIST ARRAY
+      return playlist;
     }
     
 
 
-   console.log(__getGenres())
 function App() {
 
+  // 📦 STATES
+
+  // view
   const [isExpandView, setIsExpandView] = useState(true)
   const [viewClass, setViewClass] = useState('')
-
+  // model
   const [isExpandModel, setIsExpandModel] = useState(true)
   const [modelClass, setModelClass] = useState('')
-
+  //Genres
   const [genres, setGenres] = useState([])
-
+  //
   const [currentPlaylist, setCurrentPlaylist] = useState([]);
   const [currentPlaylistTracks, setCurrentPlaylistTracks] = useState([]);
   const [playlistTracksHtml, setPlaylistTracksHtml] = useState();
 
+  //FUNCTIONS
+
+  const expandView =  () => {
+    // 🔁 expand state TRANSPOSED
+    setIsExpandView(!isExpandView)
+    // reaction class CHANGE
+    setViewClass(isExpandView ? "expand" : '')
+  }
+  const expandModel =  () => {
+    // 🔁 expand state TRANSPOSED
+    setIsExpandModel(!isExpandModel)
+    // reaction class CHANGE
+    setModelClass(isExpandModel ? "expand" : '')
+
+  }
 
   useEffect(() => {
-    const gettt = async () => {
-      const genress = await __getGenres();
-
-      console.log(genress)
-      return genress;
+    // 📦  Storing genre list for set state
+    const getGenreList = async () => {
+      //🧲 reciving genre list through API  via __getGenres call
+      const genreList = await __getGenres();
+      //console.log(genreList)
+      return genreList;
     }
-    gettt().then((gggg)=>{
-
-        setGenres(gggg)
+    //  📦 genre set state
+    getGenreList().then((genreData)=>{
+      // 📦
+      setGenres(genreData)
     })
-
     return () => {
-      
     }
-  }, [])
+  }, []);
+
+  // 💀 Genre strip HTML
   const genresHtml = genres.map(genre => {
     return <div className="genre"
       onClick={()=>{
-          setIsExpandView(!isExpandView)
-          setViewClass(isExpandView ? "expand" : '')
-            console.log(genre)
+          expandView();
+          console.log(genre)
+          // setSTATE current playlist to clicked genre
           setCurrentPlaylist(genre);
-
-          const getttt = async () => {
+          //  GET  playlist 
+          const getPlaylist = async () => {
             const playlistt = await __getPlayList(genre.id);
             return playlistt;
           }
-          getttt().then((playlisttt)=>{
-            let playlistTracks = playlisttt.playlists.items
-            console.log(playlistTracks)
+          // 🧲 get playlist call
+          getPlaylist()
+          .then((playlistData)=>{
+            let playlistTracks = playlistData.playlists.items
+            // 📦 setSTATE Playlist tracks data 
             setCurrentPlaylistTracks(playlistTracks);
 
+            // 💀 Playlist Tracks - COMPONENT
             const playlistTracksHtmlTemp = playlistTracks.map(track => {
               return <TrackSmallThumbnail track={track}/>
             })
+            // 📦 setSTATE Playlist Track markup
             setPlaylistTracksHtml(playlistTracksHtmlTemp)
           })
           
-      }}
-      >
+      }}>
         <div className="genre-icon" style={{backgroundImage: `url(${genre.icons[0].url})`}}></div>
-        {genre.name}</div>
+        {genre.name}
+      </div>
   })
+
   return (
     <div className="App">
       <div className="home">
+
         <div className="search">
           <input type="text" name="Search" id="search-home" 
-          onClick={()=>{
-            setIsExpandView(!isExpandView);
-            setViewClass(isExpandView ? "expand" : '');
-        }}/>
+          onClick={()=>{expandView();}}/>
         </div>
         <div className="genres">
           <div className="label-sub"><h3>Top Genres</h3></div>
@@ -123,7 +158,9 @@ function App() {
             {genresHtml}
           </div>
         </div>
+        
         <div className="shelf-divider"></div>
+        
         <MoodStrip></MoodStrip>
         <MoodStrip></MoodStrip>
         <MoodStrip></MoodStrip>
@@ -131,28 +168,19 @@ function App() {
       <div className={`view playlist ${viewClass}`}>
         <div className="view__head">
           <div className="back" 
-          onClick={()=>{
-            setIsExpandView(!isExpandView)
-            setViewClass(isExpandView ? "expand" : '')
-        }}>)</div>
+          onClick={()=>{expandView();}}>)</div>
         </div>
         <div className="view__body">
           <div className="playlist" 
-            onClick={()=>{
-              setIsExpandModel(!isExpandModel)
-              setModelClass(isExpandModel ? "expand" : '')
-          }}>
-              {playlistTracksHtml}
+          onClick={()=>{expandModel()}}>
+            {playlistTracksHtml}
           </div>
         </div>
       </div>
       <div className={`model player ${modelClass}`}>
         <div className="model__head">
           <div className="back" 
-          onClick={()=>{
-            setIsExpandModel(!isExpandModel)
-            setModelClass(isExpandModel ? "expand" : '')
-        }}>)</div></div>
+          onClick={()=>{expandModel()}}>)</div></div>
         <div className="model__body">
           <div className="track">
             <div className="album-artwork">
