@@ -3,4 +3,4 @@ for spotify
 
 TODO
 
-Featured Playlist
+Featured Playlist - Browse
