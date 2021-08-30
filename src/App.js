@@ -23,6 +23,8 @@ import MoodStrip from './components/MoodStrip/MoodStrip';
         const token =data.access_token;
         return token;
     }
+
+    //Categories
     const __getGenres = async () => {
       // #️⃣  receving token from spotify
       const token = await _getToken();
@@ -57,6 +59,26 @@ import MoodStrip from './components/MoodStrip/MoodStrip';
       //PLAYLIST ARRAY
       return playlist;
     }
+
+    // Featured Playlists
+    const __getFeaturedPlayList = async () => {
+
+      // #️⃣  receving token from spotify
+      const token = await _getToken();
+      // 🕊 fetch call - playlist
+      const result = await fetch(`https://api.spotify.com/v1/browse/featured-playlists`, {
+        method: 'GET',
+         headers: { 'Authorization' : 'Bearer ' + token}
+      });
+
+
+      //calling playlist API 🕊   and parsing
+      const playlist = await result.json();
+      console.log(playlist);
+      //
+      //PLAYLIST ARRAY
+      return playlist;
+    }
     
 
 
@@ -77,6 +99,9 @@ function App() {
   const [currentPlaylistTracks, setCurrentPlaylistTracks] = useState([]);
   const [playlistTracksHtml, setPlaylistTracksHtml] = useState();
 
+  // Featured Playlist
+  const [featuredPlaylist, setFeaturedPlaylist] = useState([]);
+
   //FUNCTIONS
 
   const expandView =  () => {
@@ -94,6 +119,8 @@ function App() {
   }
 
   useEffect(() => {
+
+    // Categories //
     // 📦  Storing genre list for set state
     const getGenreList = async () => {
       //🧲 reciving genre list through API  via __getGenres call
@@ -105,6 +132,22 @@ function App() {
     getGenreList().then((genreData)=>{
       // 📦
       setGenres(genreData)
+    })
+
+    // Featured Playlist //
+    // 📦  Storing genre list for set state
+    const getFeaturedPlaylist = async () => {
+      //🧲 reciving genre list through API  via __getGenres call
+      const featuredPlaylist = await __getFeaturedPlayList()
+      //console.log(genreList)
+      return featuredPlaylist;
+    }
+    //  📦 genre set state
+    getFeaturedPlaylist().then((featuredPlaylistData)=>{
+      // 📦
+      setFeaturedPlaylist(featuredPlaylistData)
+    }).then(()=>{
+      console.log(featuredPlaylist)
     })
     return () => {
     }
@@ -150,7 +193,7 @@ function App() {
 
         <div className="search">
           <input type="text" name="Search" id="search-home" 
-          onClick={()=>{expandView();}}/>
+          onClick={()=>{expandView()}}/>
         </div>
         <div className="genres">
           <div className="label-sub"><h3>Top Genres</h3></div>
@@ -160,10 +203,11 @@ function App() {
         </div>
         
         <div className="shelf-divider"></div>
-        
-        <MoodStrip></MoodStrip>
-        <MoodStrip></MoodStrip>
-        <MoodStrip></MoodStrip>
+        {/* {
+        featuredPlaylist.map(genre => {
+          debugger
+          return <MoodStrip/>
+        })} */}
       </div>
       <div className={`view playlist ${viewClass}`}>
         <div className="view__head">
