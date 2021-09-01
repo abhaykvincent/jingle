@@ -4491,7 +4491,728 @@ function App() {
             "width": null
           }
         ],
-        "id": "workout",
+        "id": "workout","items": [
+          {
+            "collaborative": false,
+            "description": "Get your beast mode on!",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX76Wlfdnj7AP"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX76Wlfdnj7AP",
+            "id": "37i9dQZF1DX76Wlfdnj7AP",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000039249b35f23fb596b6f006a15",
+                "width": null
+              }
+            ],
+            "name": "Beast Mode",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDU3MCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX76Wlfdnj7AP/tracks",
+              "total": 200
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX76Wlfdnj7AP"
+          },
+          {
+            "collaborative": false,
+            "description": "Energy tracks to get your beast mode on.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX9oh43oAzkyx"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX9oh43oAzkyx",
+            "id": "37i9dQZF1DX9oh43oAzkyx",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000361b26b89e63392ad9955ce82",
+                "width": null
+              }
+            ],
+            "name": "Beast Mode Hip-Hop",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDUyNywwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX9oh43oAzkyx/tracks",
+              "total": 76
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX9oh43oAzkyx"
+          },
+          {
+            "collaborative": false,
+            "description": "Throw the weights around with your favorite uptempo pop songs!",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX5gQonLbZD9s"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5gQonLbZD9s",
+            "id": "37i9dQZF1DX5gQonLbZD9s",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003b646573bb124fc0621fb3d64",
+                "width": null
+              }
+            ],
+            "name": "Pumped Pop",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDUyNywwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5gQonLbZD9s/tracks",
+              "total": 60
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX5gQonLbZD9s"
+          },
+          {
+            "collaborative": false,
+            "description": "Fourth quarter, two minutes left .. get locked in",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWTl4y3vgJOXW"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWTl4y3vgJOXW",
+            "id": "37i9dQZF1DWTl4y3vgJOXW",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000038902742c4dcad187aa82bbd5",
+                "width": null
+              }
+            ],
+            "name": "Locked In",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDUyNiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWTl4y3vgJOXW/tracks",
+              "total": 150
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWTl4y3vgJOXW"
+          },
+          {
+            "collaborative": false,
+            "description": "Pop hits to keep your workout fresh.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX70RN3TfWWJh"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX70RN3TfWWJh",
+            "id": "37i9dQZF1DX70RN3TfWWJh",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000039cc6891dbc9b7292361bd673",
+                "width": null
+              }
+            ],
+            "name": "Workout",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDUyNywwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX70RN3TfWWJh/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX70RN3TfWWJh"
+          },
+          {
+            "collaborative": false,
+            "description": "Big rap for big reps. You got this.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX76t638V6CA8"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX76t638V6CA8",
+            "id": "37i9dQZF1DX76t638V6CA8",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000030b5dffb6f645059b157fc77b",
+                "width": null
+              }
+            ],
+            "name": "Rap Workout",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDUyNiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX76t638V6CA8/tracks",
+              "total": 59
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX76t638V6CA8"
+          },
+          {
+            "collaborative": false,
+            "description": "Uplifting and energetic music that helps you stay motivated.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXdxcBWuJkbcy"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXdxcBWuJkbcy",
+            "id": "37i9dQZF1DXdxcBWuJkbcy",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003a088a35ef6e638c42f88deda",
+                "width": null
+              }
+            ],
+            "name": "Motivation Mix",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDUyOCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXdxcBWuJkbcy/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXdxcBWuJkbcy"
+          },
+          {
+            "collaborative": false,
+            "description": "For whatever activity you do that may need a punch of intensity!",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWUVpAXiEPK8P"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWUVpAXiEPK8P",
+            "id": "37i9dQZF1DWUVpAXiEPK8P",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000035b9afc20f73de2953ea450f7",
+                "width": null
+              }
+            ],
+            "name": "Power Workout",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDUyNiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWUVpAXiEPK8P/tracks",
+              "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWUVpAXiEPK8P"
+          },
+          {
+            "collaborative": false,
+            "description": "Aggressive trap and bass for the <a href=\"spotify:genre:edm_dance\">gym</a>.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX4eRPd9frC1m"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4eRPd9frC1m",
+            "id": "37i9dQZF1DX4eRPd9frC1m",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003122921a072ad2ca9ce90a456",
+                "width": null
+              }
+            ],
+            "name": "Hype",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDUyNSwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4eRPd9frC1m/tracks",
+              "total": 181
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX4eRPd9frC1m"
+          },
+          {
+            "collaborative": false,
+            "description": "Need to break a sweat? Turn these jams up and stay motivated!",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWUSyphfcc6aL"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWUSyphfcc6aL",
+            "id": "37i9dQZF1DWUSyphfcc6aL",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000344974902f0d4e2f4613bc3b0",
+                "width": null
+              }
+            ],
+            "name": "Workout Beats",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDUyNiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWUSyphfcc6aL/tracks",
+              "total": 70
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWUSyphfcc6aL"
+          },
+          {
+            "collaborative": false,
+            "description": "If your workout doubles as an outlet for your aggression, this is the playlist for you.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXe6bgV3TmZOL"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXe6bgV3TmZOL",
+            "id": "37i9dQZF1DXe6bgV3TmZOL",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003929e39d3550da276515b31f2",
+                "width": null
+              }
+            ],
+            "name": "Adrenaline Workout",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDUyNiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXe6bgV3TmZOL/tracks",
+              "total": 120
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXe6bgV3TmZOL"
+          },
+          {
+            "collaborative": false,
+            "description": "Nothing but anthems - for an extra rep, an extra set, an extra mile...",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWYNSm3Z3MxiM"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWYNSm3Z3MxiM",
+            "id": "37i9dQZF1DWYNSm3Z3MxiM",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000374e332932155604ae4e59d89",
+                "width": null
+              }
+            ],
+            "name": "Classic Rock Workout",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDUyNywwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWYNSm3Z3MxiM/tracks",
+              "total": 65
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWYNSm3Z3MxiM"
+          },
+          {
+            "collaborative": false,
+            "description": "Get your body right with this workout twerkout",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX0HRj9P7NxeE"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX0HRj9P7NxeE",
+            "id": "37i9dQZF1DX0HRj9P7NxeE",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003e3c40ab7c0d150be536f492e",
+                "width": null
+              }
+            ],
+            "name": "Workout Twerkout",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDM1MTc5NSwwMDAwMDQ2MjAwMDAwMTdiOTg4YTI2NjkwMDAwMDE3YTVlZWJhNGQw",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX0HRj9P7NxeE/tracks",
+              "total": 51
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX0HRj9P7NxeE"
+          },
+          {
+            "collaborative": false,
+            "description": "The best pop and hip hop tracks to celebrate your workout. You can do it!",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWTDafB3skWPN"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWTDafB3skWPN",
+            "id": "37i9dQZF1DWTDafB3skWPN",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000039e20b759389b17dad21afa17",
+                "width": null
+              }
+            ],
+            "name": "Feeling Accomplished",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDUyNywwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWTDafB3skWPN/tracks",
+              "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWTDafB3skWPN"
+          },
+          {
+            "collaborative": false,
+            "description": "Upbeat dance pop to keep your heart pumping.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWSJHnPb1f0X3"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWSJHnPb1f0X3",
+            "id": "37i9dQZF1DWSJHnPb1f0X3",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003eee1365954b35d0def7bb1b5",
+                "width": null
+              }
+            ],
+            "name": "Cardio",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDUyNywwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWSJHnPb1f0X3/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWSJHnPb1f0X3"
+          },
+          {
+            "collaborative": false,
+            "description": "Throw it back to the biggest, best hits of the 2000's.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX8CwbNGNKurt"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX8CwbNGNKurt",
+            "id": "37i9dQZF1DX8CwbNGNKurt",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000033457ebc8f98b67b6df4c4f10",
+                "width": null
+              }
+            ],
+            "name": "Throwback Workout",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDUyNiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX8CwbNGNKurt/tracks",
+              "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX8CwbNGNKurt"
+          },
+          {
+            "collaborative": false,
+            "description": "The champs are here.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX8dTWjpijlub"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX8dTWjpijlub",
+            "id": "37i9dQZF1DX8dTWjpijlub",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000339944caca5dfcd741d31137d",
+                "width": null
+              }
+            ],
+            "name": "Trophy Room",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDUyNiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX8dTWjpijlub/tracks",
+              "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX8dTWjpijlub"
+          },
+          {
+            "collaborative": false,
+            "description": "24 songs dedicated to the Mamba & Mambacita. R.I.P. Kobe & Gianna Bryant.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXaitacWUJMPH"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXaitacWUJMPH",
+            "id": "37i9dQZF1DXaitacWUJMPH",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000030a1c0a9b353861ab36472d91",
+                "width": null
+              }
+            ],
+            "name": "2 . 24",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDUyNiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXaitacWUJMPH/tracks",
+              "total": 24
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXaitacWUJMPH"
+          },
+          {
+            "collaborative": false,
+            "description": "Workout to K-Pop? Count me in! (Cover: SOMI) (신나는 케이팝 댄스 음악과 함께 운동을 즐겨보세요!)",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX3ZeFHRhhi7Y"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX3ZeFHRhhi7Y",
+            "id": "37i9dQZF1DX3ZeFHRhhi7Y",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003dce09358b2892d450085f583",
+                "width": null
+              }
+            ],
+            "name": "WOR K  OUT",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDUyNywwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX3ZeFHRhhi7Y/tracks",
+              "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX3ZeFHRhhi7Y"
+          },
+          {
+            "collaborative": false,
+            "description": "Put a spring in your step with these mood boosting tracks.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXadOVCgGhS7j"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXadOVCgGhS7j",
+            "id": "37i9dQZF1DXadOVCgGhS7j",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003ace81b7196d88005082b0f72",
+                "width": null
+              }
+            ],
+            "name": "Fun Run",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDUyNiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXadOVCgGhS7j/tracks",
+              "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXadOVCgGhS7j"
+          }
+        ],
         "name": "Workout"
       },
       {
@@ -4504,6 +5225,728 @@ function App() {
           }
         ],
         "id": "rnb",
+        "playlist": [
+          {
+            "collaborative": false,
+            "description": "What's happening in R&B, right now. Cover: dvsn, Ty Dolla $ign",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX2WkIBRaChxW"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX2WkIBRaChxW",
+            "id": "37i9dQZF1DX2WkIBRaChxW",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000031e0ff839d85b520aed7b18fc",
+                "width": null
+              }
+            ],
+            "name": "R&B Right Now",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDEwMTc4MCwwMDAwMDJmMDAwMDAwMTdiODlhMzM5N2MwMDAwMDE3Yjg0NzFmOWRi",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX2WkIBRaChxW/tracks",
+              "total": 74
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX2WkIBRaChxW"
+          },
+          {
+            "collaborative": false,
+            "description": "Elevate your aura with the latest in R&B. Cover: a l l i e",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX2PG4mbkilf3"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX2PG4mbkilf3",
+            "id": "37i9dQZF1DX2PG4mbkilf3",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003189786334906d751f843ad30",
+                "width": null
+              }
+            ],
+            "name": "Mood Ring",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDM0ODUyMiwwMDAwMDIwZTAwMDAwMTdiOTg1ODM0OGUwMDAwMDE3Yjg0OTgxNTEx",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX2PG4mbkilf3/tracks",
+              "total": 98
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX2PG4mbkilf3"
+          },
+          {
+            "collaborative": false,
+            "description": "The pulse of R&B music today.  Cover: Alex Isley",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX4SBhb3fqCJd"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4SBhb3fqCJd",
+            "id": "37i9dQZF1DX4SBhb3fqCJd",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000035ba1dc2cc756876259b86015",
+                "width": null
+              }
+            ],
+            "name": "Are & Be",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDAzNjgwMCwwMDAwMDUyNzAwMDAwMTdiODVjM2IyYzEwMDAwMDE3YjgzZDNjMDRm",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4SBhb3fqCJd/tracks",
+              "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX4SBhb3fqCJd"
+          },
+          {
+            "collaborative": false,
+            "description": "The tracks you can put on repeat all day. Cover: PARTYNEXTDOOR",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX7FY5ma9162x"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX7FY5ma9162x",
+            "id": "37i9dQZF1DX7FY5ma9162x",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003374c5477568731ecbeb0c5f7",
+                "width": null
+              }
+            ],
+            "name": "R&B Favourites",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDY2MCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX7FY5ma9162x/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX7FY5ma9162x"
+          },
+          {
+            "collaborative": false,
+            "description": "Check out these throwback R&B jams from the first decade of the 21st century. Cover: Mariah Carey",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWYmmr74INQlb"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWYmmr74INQlb",
+            "id": "37i9dQZF1DWYmmr74INQlb",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000037a55a9d8930867b68d3a56e1",
+                "width": null
+              }
+            ],
+            "name": "I Love My '00s R&B",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDY2MSwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWYmmr74INQlb/tracks",
+              "total": 40
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWYmmr74INQlb"
+          },
+          {
+            "collaborative": false,
+            "description": "Feel good with this positively timeless playlist!",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX9XIFQuFvzM4"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX9XIFQuFvzM4",
+            "id": "37i9dQZF1DX9XIFQuFvzM4",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000313a02d059c0479e65a850267",
+                "width": null
+              }
+            ],
+            "name": "Feelin' Good",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDY0NiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX9XIFQuFvzM4/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX9XIFQuFvzM4"
+          },
+          {
+            "collaborative": false,
+            "description": "The '90s had an amazing soundtrack. Let's reminisce with these R&B jams!",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX6VDO8a6cQME"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6VDO8a6cQME",
+            "id": "37i9dQZF1DX6VDO8a6cQME",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000034cc17e05fc5eea4742e323bf",
+                "width": null
+              }
+            ],
+            "name": "I Love My '90s R&B",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDY2MSwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6VDO8a6cQME/tracks",
+              "total": 45
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX6VDO8a6cQME"
+          },
+          {
+            "collaborative": false,
+            "description": "The most essential R&B songs from the 2010s. Cover: Beyonce",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWXbttAJcbphz"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWXbttAJcbphz",
+            "id": "37i9dQZF1DWXbttAJcbphz",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000356ddc6690d7a79b27124de6f",
+                "width": null
+              }
+            ],
+            "name": "I Love My '10s R&B",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDY2MywwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWXbttAJcbphz/tracks",
+              "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWXbttAJcbphz"
+          },
+          {
+            "collaborative": false,
+            "description": "Slow jams for the passionate.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX0QKpU3cGsyb"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX0QKpU3cGsyb",
+            "id": "37i9dQZF1DX0QKpU3cGsyb",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000039fec2373847cde79dcdba5b5",
+                "width": null
+              }
+            ],
+            "name": "Bedroom Jams",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDEwOTY5NCwwMDAwMDQ3NzAwMDAwMTdiOGExYmY4YTQwMDAwMDE2ZDE1NTk4OWUy",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX0QKpU3cGsyb/tracks",
+              "total": 75
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX0QKpU3cGsyb"
+          },
+          {
+            "collaborative": false,
+            "description": "These progressive R&B and soul tracks can't be put in a box. Cover: Snoh Aalegra",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWSfMe9z89s9B"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWSfMe9z89s9B",
+            "id": "37i9dQZF1DWSfMe9z89s9B",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000378b06fb5c0c904cc78774811",
+                "width": null
+              }
+            ],
+            "name": "Alternative R&B",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDY0NSwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWSfMe9z89s9B/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWSfMe9z89s9B"
+          },
+          {
+            "collaborative": false,
+            "description": "Chilled R&B jams for your most relaxed moods.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX2UgsUIg75Vg"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX2UgsUIg75Vg",
+            "id": "37i9dQZF1DX2UgsUIg75Vg",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000032b29b4a26e620ccd2bd2d2f8",
+                "width": null
+              }
+            ],
+            "name": "Chilled R&B",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYyOTQzMjA2MCwwMDAwMDRhNjAwMDAwMTdiNjFiODE4ZGIwMDAwMDE2ZDE1MjYzZjhm",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX2UgsUIg75Vg/tracks",
+              "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX2UgsUIg75Vg"
+          },
+          {
+            "collaborative": false,
+            "description": "Where R&B from around the world comes to play with hip-hop & pop!   Cover: Lizzo & Cardi B",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX4y8h9WqDPAE"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4y8h9WqDPAE",
+            "id": "37i9dQZF1DX4y8h9WqDPAE",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000032f12553bf2e4a99a01c33823",
+                "width": null
+              }
+            ],
+            "name": "Channel X",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYyODg4NjI5MCwwMDAwMDExOTAwMDAwMTdiNDEzMDUyMDkwMDAwMDE3YjNiZjAyZWM4",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4y8h9WqDPAE/tracks",
+              "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX4y8h9WqDPAE"
+          },
+          {
+            "collaborative": false,
+            "description": "All the jams. Cover: Toni Braxton",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWXnexX7CktaI"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWXnexX7CktaI",
+            "id": "37i9dQZF1DWXnexX7CktaI",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000037be3edc726cd264f1cc828f4",
+                "width": null
+              }
+            ],
+            "name": "Gold Edition",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDY0NSwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWXnexX7CktaI/tracks",
+              "total": 40
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWXnexX7CktaI"
+          },
+          {
+            "collaborative": false,
+            "description": "The newest, freshest R&B tunes.  Cover: Kiana Lede",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWUzFXarNiofw"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWUzFXarNiofw",
+            "id": "37i9dQZF1DWUzFXarNiofw",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003bfdc90a97bdf2eda89bb98c7",
+                "width": null
+              }
+            ],
+            "name": "New Jams",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDAzNjgwMCwwMDAwMDUyZTAwMDAwMTdiODVjM2IyYmIwMDAwMDE3YWQwOWVmMzU1",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWUzFXarNiofw/tracks",
+              "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWUzFXarNiofw"
+          },
+          {
+            "collaborative": false,
+            "description": "Sophisticated palates only. Curated by: James Harden",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWSUur0QPPsOn"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWSUur0QPPsOn",
+            "id": "37i9dQZF1DWSUur0QPPsOn",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000034da4da7852bf2c83b1bf492c",
+                "width": null
+              }
+            ],
+            "name": "Taste",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDY2MiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWSUur0QPPsOn/tracks",
+              "total": 49
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWSUur0QPPsOn"
+          },
+          {
+            "collaborative": false,
+            "description": "What we're gonna do right now is go back—back in time. Here are all your favorite '90s R&B slow jams!",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWVEvzGeX3eRs"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWVEvzGeX3eRs",
+            "id": "37i9dQZF1DWVEvzGeX3eRs",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000039d574d6f27a73e668fee93ef",
+                "width": null
+              }
+            ],
+            "name": "'90s Baby Makers",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDY2MSwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWVEvzGeX3eRs/tracks",
+              "total": 47
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWVEvzGeX3eRs"
+          },
+          {
+            "collaborative": false,
+            "description": "Whether you're lounging at home or out with your friends, let this playlist provide your soundtrack.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX62Nfha2yFhL"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX62Nfha2yFhL",
+            "id": "37i9dQZF1DX62Nfha2yFhL",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000036e1034ebd7b7c86546c6acca",
+                "width": null
+              }
+            ],
+            "name": "Soul Lounge",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYxOTExNzU3MCwwMDAwMDA2NjAwMDAwMTc4ZmFlZDc4OWEwMDAwMDE2ZDE1MzJiMDAy",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX62Nfha2yFhL/tracks",
+              "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX62Nfha2yFhL"
+          },
+          {
+            "collaborative": false,
+            "description": "For all the beautiful queens! Guest curated by Jennifer Hudson.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWSIO2QWRavWZ"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWSIO2QWRavWZ",
+            "id": "37i9dQZF1DWSIO2QWRavWZ",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003cdcd1a7f36e110ce04c98f48",
+                "width": null
+              }
+            ],
+            "name": "Queen",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDYwMywwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWSIO2QWRavWZ/tracks",
+              "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWSIO2QWRavWZ"
+          },
+          {
+            "collaborative": false,
+            "description": "A musical celebration of women in R&amp;B, from its earliest acts to its newest stars. Cover: Aretha Franklin",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX1wNY9tfWQsS"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1wNY9tfWQsS",
+            "id": "37i9dQZF1DX1wNY9tfWQsS",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000034f713436a6f7ac34d35eb0a2",
+                "width": null
+              }
+            ],
+            "name": "Women of R&B",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDY2MSwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1wNY9tfWQsS/tracks",
+              "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX1wNY9tfWQsS"
+          },
+          {
+            "collaborative": false,
+            "description": "The tunes to ease you into your day.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXaXDsfv6nvZ5"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXaXDsfv6nvZ5",
+            "id": "37i9dQZF1DXaXDsfv6nvZ5",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003f2de418f550899021c7cabd0",
+                "width": null
+              }
+            ],
+            "name": "Soul Coffee",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDY0NSwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXaXDsfv6nvZ5/tracks",
+              "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXaXDsfv6nvZ5"
+          }
+        ],
         "name": "R&B"
       },
       {
