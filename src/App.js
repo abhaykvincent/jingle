@@ -89,6 +89,7 @@ import MoodStrip from './components/MoodStrip/MoodStrip';
 
     //calling playlist API 🕊   and parsing
     const playlist = await result.json();
+    console.log(playlist)
     //
     //PLAYLIST ARRAY
     return playlist;
@@ -188,28 +189,34 @@ function App() {
     }
     else{
       console.log(featuredPlaylist)
-      let featuredPlaylistHTMLtemp =[0]
-       featuredPlaylist.map((data) => {
-
-        const getTracksList = async () => {
-          const tracks = await __getPlayListById(data.id);
-          return tracks.tracks.items;
-        }
-        getTracksList().then(tracks=>{
-          featuredPlaylistHTMLtemp.push( <MoodStrip playlist={data} tracks={tracks} key={data.id}/>)
-          debugger
-          console.log(featuredPlaylistHTMLtemp)
-        }).catch(()=>{
-          console.log('getTracksList() Err')
-        })
-        
-      })
-      console.log(featuredPlaylistHTMLtemp)
-      setFeaturedPlaylistHTML(featuredPlaylistHTMLtemp)
+      let featuredPlaylistHTMLtemp =[]
+      
 
 
-    }
-  }, [featuredPlaylist]);
+      Promise.all(
+        featuredPlaylist.map((data) => {
+          const getTracksList = async () => {
+            const tracks = await __getPlayListById(data.id);
+            return tracks.tracks.items;
+          }
+
+          getTracksList()
+          .then(tracks=>{
+
+            featuredPlaylistHTMLtemp.push( <MoodStrip playlist={data} tracks={tracks} key={data.id}/>)
+            
+            setFeaturedPlaylistHTML(featuredPlaylistHTMLtemp)
+          })
+            .catch(()=>{
+              console.log('getTracksList() Err')
+            })
+        }))
+        .then(()=>{
+            return
+            })
+
+          }
+        }, [featuredPlaylist,featuredPlaylistHTML]);
 
   // 💀 Genre strip HTML
   const genresHtml = genres.map(genre => {
