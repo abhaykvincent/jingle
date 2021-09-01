@@ -4491,7 +4491,6 @@ function App() {
             "width": null
           }
         ],
-<<<<<<< HEAD
         "id": "workout","items": [
           {
             "collaborative": false,
@@ -5948,21 +5947,6 @@ function App() {
             "uri": "spotify:playlist:37i9dQZF1DXaXDsfv6nvZ5"
           }
         ],
-=======
-        "id": "workout",
-        "name": "Workout"
-      },
-      {
-        "href": "https://api.spotify.com/v1/browse/categories/rnb",
-        "icons": [
-          {
-            "height": 274,
-            "url": "https://t.scdn.co/media/derived/r-b-274x274_fd56efa72f4f63764b011b68121581d8_0_0_274_274.jpg",
-            "width": 274
-          }
-        ],
-        "id": "rnb",
->>>>>>> api-remove
         "name": "R&B"
       },
       {
