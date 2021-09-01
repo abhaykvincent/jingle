@@ -5959,6 +5959,728 @@ function App() {
           }
         ],
         "id": "mood",
+        "playlist": [
+          {
+            "collaborative": false,
+            "description": "Get happy with today's dose of feel-good songs!",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX3rxVfibe1L0"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX3rxVfibe1L0",
+            "id": "37i9dQZF1DX3rxVfibe1L0",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003bd0e19e810bb4b55ab164a95",
+                "width": null
+              }
+            ],
+            "name": "Mood Booster",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDk0OCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX3rxVfibe1L0/tracks",
+              "total": 76
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX3rxVfibe1L0"
+          },
+          {
+            "collaborative": false,
+            "description": "Make your shower more uplifting by singing along to these hits.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWSqmBTGDYngZ"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWSqmBTGDYngZ",
+            "id": "37i9dQZF1DWSqmBTGDYngZ",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000389713e7e7639dd0eae95d9d4",
+                "width": null
+              }
+            ],
+            "name": "Songs to Sing in the Shower",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDk2NCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWSqmBTGDYngZ/tracks",
+              "total": 200
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWSqmBTGDYngZ"
+          },
+          {
+            "collaborative": false,
+            "description": "Curl up in your favorite spot with some sweet, mellow tunes...",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX6ziVCJnEm59"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6ziVCJnEm59",
+            "id": "37i9dQZF1DX6ziVCJnEm59",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000035ae7aa0454c9eafdd6505fda",
+                "width": null
+              }
+            ],
+            "name": "Your Favorite Coffeehouse",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDAzNjg2MCwwMDAwMDA5MTAwMDAwMTdiODVjNDljZDgwMDAwMDE2ZDAwYjhlMDA5",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6ziVCJnEm59/tracks",
+              "total": 126
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX6ziVCJnEm59"
+          },
+          {
+            "collaborative": false,
+            "description": "Hits to boost your mood and fill you with happiness!",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXdPec7aLTmlC"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXdPec7aLTmlC",
+            "id": "37i9dQZF1DXdPec7aLTmlC",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000035af1070c80cd50dbbb4cfa19",
+                "width": null
+              }
+            ],
+            "name": "Happy Hits!",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDk0NywwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXdPec7aLTmlC/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXdPec7aLTmlC"
+          },
+          {
+            "collaborative": false,
+            "description": "Feel-good <a href=\"spotify:genre:edm_dance\">dance music</a>!",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWSf2RDTDayIx"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWSf2RDTDayIx",
+            "id": "37i9dQZF1DWSf2RDTDayIx",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003fe0099a8dcd3054706ffc92f",
+                "width": null
+              }
+            ],
+            "name": "Happy Beats",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDk5NCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWSf2RDTDayIx/tracks",
+              "total": 150
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWSf2RDTDayIx"
+          },
+          {
+            "collaborative": false,
+            "description": "Feel great with these timelessly fun songs!",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX7KNKjOK0o75"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX7KNKjOK0o75",
+            "id": "37i9dQZF1DX7KNKjOK0o75",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000393ab3bfd3edf45ee5716023a",
+                "width": null
+              }
+            ],
+            "name": "Have a Great Day!",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDk5NCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX7KNKjOK0o75/tracks",
+              "total": 102
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX7KNKjOK0o75"
+          },
+          {
+            "collaborative": false,
+            "description": "Grab your coffee and ease into the day with this light blend.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXcgZcN2HVMoe"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXcgZcN2HVMoe",
+            "id": "37i9dQZF1DXcgZcN2HVMoe",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000340e6ba6a7be34cbcc0219f69",
+                "width": null
+              }
+            ],
+            "name": "Morning Coffee",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDk2MSwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXcgZcN2HVMoe/tracks",
+              "total": 250
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXcgZcN2HVMoe"
+          },
+          {
+            "collaborative": false,
+            "description": "every main character needs their soundtrack",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX4OzrY981I1W"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4OzrY981I1W",
+            "id": "37i9dQZF1DX4OzrY981I1W",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003d2789b816dfcdc308c56fb33",
+                "width": null
+              }
+            ],
+            "name": "my life is a movie",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDk0NiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4OzrY981I1W/tracks",
+              "total": 75
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX4OzrY981I1W"
+          },
+          {
+            "collaborative": false,
+            "description": "The hip-hop playlist that's a whole mood. Cover: Kash Doll; Art by Laci Jordan",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX6GwdWRQMQpq"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6GwdWRQMQpq",
+            "id": "37i9dQZF1DX6GwdWRQMQpq",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003c32c28372835af7e7e9dbed2",
+                "width": null
+              }
+            ],
+            "name": "Feelin' Myself",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDAzNjgwMCwwMDAwMDQ0ZDAwMDAwMTdiODVjM2IyYzQwMDAwMDE3YjdlYTllNmEx",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6GwdWRQMQpq/tracks",
+              "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX6GwdWRQMQpq"
+          },
+          {
+            "collaborative": false,
+            "description": "The perfect soundtrack for a day on the water. ",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXcSzYlwgjiSi"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXcSzYlwgjiSi",
+            "id": "37i9dQZF1DXcSzYlwgjiSi",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000031ce469c867c1c6e1cc7f815b",
+                "width": null
+              }
+            ],
+            "name": "Party Cove",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYyOTQyOTgxNywwMDAwMDAxYjAwMDAwMTdiNjE5NWUxMDUwMDAwMDE3MmUxYzkwZWJi",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXcSzYlwgjiSi/tracks",
+              "total": 115
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXcSzYlwgjiSi"
+          },
+          {
+            "collaborative": false,
+            "description": "Need to get your energy level up? This will help!",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWXLSRKeL7KwM"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWXLSRKeL7KwM",
+            "id": "37i9dQZF1DWXLSRKeL7KwM",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003a46a02f3aaeccdaa10eba231",
+                "width": null
+              }
+            ],
+            "name": "Energy Booster: Country",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDk2MywwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWXLSRKeL7KwM/tracks",
+              "total": 150
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWXLSRKeL7KwM"
+          },
+          {
+            "collaborative": false,
+            "description": "Set it off with these epic anthems. Only good vibes here!",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWYBO1MoTDhZI"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWYBO1MoTDhZI",
+            "id": "37i9dQZF1DWYBO1MoTDhZI",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000037dc2a0fb4bfe0d07294f685e",
+                "width": null
+              }
+            ],
+            "name": "Good Vibes",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDEwMDA5MCwwMDAwMDA5NzAwMDAwMTdiODk4OTZlZWQwMDAwMDE3ODZhM2IzNzNh",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWYBO1MoTDhZI/tracks",
+              "total": 102
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWYBO1MoTDhZI"
+          },
+          {
+            "collaborative": false,
+            "description": "Bad b**** energy. Be blessed, be spicy. Cover: Lizzo, Cardi B",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX66m4icL86Ru"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX66m4icL86Ru",
+            "id": "37i9dQZF1DX66m4icL86Ru",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003908d1d0bc9dce82b87204b4c",
+                "width": null
+              }
+            ],
+            "name": "BBE",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDAzNjg2MCwwMDAwMDA3MTAwMDAwMTdiODVjNDljZTAwMDAwMDE3YjViYTU3Y2Rj",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX66m4icL86Ru/tracks",
+              "total": 80
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX66m4icL86Ru"
+          },
+          {
+            "collaborative": false,
+            "description": "Feel good with this positively timeless playlist!",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX9XIFQuFvzM4"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX9XIFQuFvzM4",
+            "id": "37i9dQZF1DX9XIFQuFvzM4",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000313a02d059c0479e65a850267",
+                "width": null
+              }
+            ],
+            "name": "Feelin' Good",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDk0NiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX9XIFQuFvzM4/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX9XIFQuFvzM4"
+          },
+          {
+            "collaborative": false,
+            "description": "You're on top of the world. Don't forget it.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX4fpCWaHOned"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4fpCWaHOned",
+            "id": "37i9dQZF1DX4fpCWaHOned",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000037e368901f39aae9d510c8fda",
+                "width": null
+              }
+            ],
+            "name": "Confidence Boost",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDk5NCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4fpCWaHOned/tracks",
+              "total": 75
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX4fpCWaHOned"
+          },
+          {
+            "collaborative": false,
+            "description": "Softer kinda <a href=\"spotify:genre:edm_dance\">dance</a>.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX6VdMW310YC7"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6VdMW310YC7",
+            "id": "37i9dQZF1DX6VdMW310YC7",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003e90bb6612cfbd77d87343ac2",
+                "width": null
+              }
+            ],
+            "name": "Chill Tracks",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDk0NywwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6VdMW310YC7/tracks",
+              "total": 303
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX6VdMW310YC7"
+          },
+          {
+            "collaborative": false,
+            "description": "Set the mood of your day with these awesome, happy songs!",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX0UrRvztWcAU"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX0UrRvztWcAU",
+            "id": "37i9dQZF1DX0UrRvztWcAU",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000030bd6693bac1f89a70d623e4d",
+                "width": null
+              }
+            ],
+            "name": "Wake Up Happy",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDk2MiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX0UrRvztWcAU/tracks",
+              "total": 150
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX0UrRvztWcAU"
+          },
+          {
+            "collaborative": false,
+            "description": "Need to get your energy level up? This will help!",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX0vHZ8elq0UK"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX0vHZ8elq0UK",
+            "id": "37i9dQZF1DX0vHZ8elq0UK",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003d8719001db822961551b017c",
+                "width": null
+              }
+            ],
+            "name": "Energy Booster: Pop",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDk2MSwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX0vHZ8elq0UK/tracks",
+              "total": 150
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX0vHZ8elq0UK"
+          },
+          {
+            "collaborative": false,
+            "description": "Happy songs by alternative bands. Any listener can connect with these indie jams.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX2sUQwD7tbmL"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX2sUQwD7tbmL",
+            "id": "37i9dQZF1DX2sUQwD7tbmL",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003033194582b613753efeb6e71",
+                "width": null
+              }
+            ],
+            "name": "Feel-Good Indie Rock",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDk0NiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX2sUQwD7tbmL/tracks",
+              "total": 120
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX2sUQwD7tbmL"
+          },
+          {
+            "collaborative": false,
+            "description": "Because the best things in life are wild and free...",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX5Q5wA1hY6bS"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5Q5wA1hY6bS",
+            "id": "37i9dQZF1DX5Q5wA1hY6bS",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003dcdb2503a0e4e2c6b3bfdd19",
+                "width": null
+              }
+            ],
+            "name": "Wild + Free",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDk2NiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5Q5wA1hY6bS/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX5Q5wA1hY6bS"
+          }
+        ],
         "name": "Mood"
       },
       {
@@ -5971,6 +6693,728 @@ function App() {
           }
         ],
         "id": "edm_dance",
+        "playlist": [
+          {
+            "collaborative": false,
+            "description": "The best of today's dance hits. Cover: Caribou",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXdIpacQDPDV5"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXdIpacQDPDV5",
+            "id": "37i9dQZF1DXdIpacQDPDV5",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003213315a35cb5acd638da87a1",
+                "width": null
+              }
+            ],
+            "name": "mint Canada",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ0NTU0MywwMDAwMDJmNTAwMDAwMTdiOWUyMDlmYWMwMDAwMDE3Yjg2MTUwZmNj",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXdIpacQDPDV5/tracks",
+              "total": 101
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXdIpacQDPDV5"
+          },
+          {
+            "collaborative": false,
+            "description": "Ride the bassline. Cover: Shaun Frank",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWZCdOD1jAvLL"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWZCdOD1jAvLL",
+            "id": "37i9dQZF1DWZCdOD1jAvLL",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000034d322dcc845cbc051783610c",
+                "width": null
+              }
+            ],
+            "name": "Bangers",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDA5Mzg0OCwwMDAwMDFiZTAwMDAwMTdiODkyYTJlYTAwMDAwMDE3YjNkYmE0ZDU3",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWZCdOD1jAvLL/tracks",
+              "total": 67
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWZCdOD1jAvLL"
+          },
+          {
+            "collaborative": false,
+            "description": "Today's festival hits to keep your heart full. Peace, love, unity, respect. 💗",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX1kCIzMYtzum"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1kCIzMYtzum",
+            "id": "37i9dQZF1DX1kCIzMYtzum",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003d7c2716d90bf14c12ad335db",
+                "width": null
+              }
+            ],
+            "name": "EDM",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTAyMSwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1kCIzMYtzum/tracks",
+              "total": 75
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX1kCIzMYtzum"
+          },
+          {
+            "collaborative": false,
+            "description": "A mix of the biggest pop, dance, and hip hop hits. Cover: Skrillex, Don Toliver, & Justin Bieber",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXa2PvUpywmrr"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXa2PvUpywmrr",
+            "id": "37i9dQZF1DXa2PvUpywmrr",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003d1a61aefdfe61a6f3b85bb0f",
+                "width": null
+              }
+            ],
+            "name": "Party Hits",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTAwNSwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXa2PvUpywmrr/tracks",
+              "total": 75
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXa2PvUpywmrr"
+          },
+          {
+            "collaborative": false,
+            "description": "Feel-good <a href=\"spotify:genre:edm_dance\">dance music</a>!",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWSf2RDTDayIx"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWSf2RDTDayIx",
+            "id": "37i9dQZF1DWSf2RDTDayIx",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003fe0099a8dcd3054706ffc92f",
+                "width": null
+              }
+            ],
+            "name": "Happy Beats",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTA0MCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWSf2RDTDayIx/tracks",
+              "total": 150
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWSf2RDTDayIx"
+          },
+          {
+            "collaborative": false,
+            "description": "All the <a href=\"spotify:genre:edm_dance\">big ones</a> with Swedish House Mafia.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX0BcQWzuB7ZO"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX0BcQWzuB7ZO",
+            "id": "37i9dQZF1DX0BcQWzuB7ZO",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000035c121d22d792502136591291",
+                "width": null
+              }
+            ],
+            "name": "Dance Hits",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYyODg1MjQwMCwwMDAwMDE2YzAwMDAwMTdiM2YyYjJmZmEwMDAwMDE3YWM5ZDNiNzhl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX0BcQWzuB7ZO/tracks",
+              "total": 95
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX0BcQWzuB7ZO"
+          },
+          {
+            "collaborative": false,
+            "description": "<a href=\"spotify:genre:edm_dance\">Move</a> your feet!",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXaXB8fQg7xif"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXaXB8fQg7xif",
+            "id": "37i9dQZF1DXaXB8fQg7xif",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003470dd505fcf08e4693db9b24",
+                "width": null
+              }
+            ],
+            "name": "Dance Party",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTAwNiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXaXB8fQg7xif/tracks",
+              "total": 125
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXaXB8fQg7xif"
+          },
+          {
+            "collaborative": false,
+            "description": "Softer kinda <a href=\"spotify:genre:edm_dance\">dance</a>.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX6VdMW310YC7"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6VdMW310YC7",
+            "id": "37i9dQZF1DX6VdMW310YC7",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003e90bb6612cfbd77d87343ac2",
+                "width": null
+              }
+            ],
+            "name": "Chill Tracks",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTAwNywwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6VdMW310YC7/tracks",
+              "total": 303
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX6VdMW310YC7"
+          },
+          {
+            "collaborative": false,
+            "description": "Aggressive trap and bass for the <a href=\"spotify:genre:edm_dance\">gym</a>.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX4eRPd9frC1m"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4eRPd9frC1m",
+            "id": "37i9dQZF1DX4eRPd9frC1m",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003122921a072ad2ca9ce90a456",
+                "width": null
+              }
+            ],
+            "name": "Hype",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTAwNSwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4eRPd9frC1m/tracks",
+              "total": 181
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX4eRPd9frC1m"
+          },
+          {
+            "collaborative": false,
+            "description": "Take down the tempo but keep the party going with the biggest tropical house jams.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX0AMssoUKCz7"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX0AMssoUKCz7",
+            "id": "37i9dQZF1DX0AMssoUKCz7",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003194e62197788bcbd737a07a2",
+                "width": null
+              }
+            ],
+            "name": "Tropical House",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTAyMCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX0AMssoUKCz7/tracks",
+              "total": 200
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX0AMssoUKCz7"
+          },
+          {
+            "collaborative": false,
+            "description": "Just try not to move to this mix of recent hits. Cover: Loud Luxury",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWU2jh5S7FvXl"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWU2jh5S7FvXl",
+            "id": "37i9dQZF1DWU2jh5S7FvXl",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000033f6e7767af1ff06f990b3d49",
+                "width": null
+              }
+            ],
+            "name": "Dance Favourites",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTAyMiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWU2jh5S7FvXl/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWU2jh5S7FvXl"
+          },
+          {
+            "collaborative": false,
+            "description": "Kes takes over Massive Soca Hits for Carnival 2021",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWW7BONj8RiqI"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWW7BONj8RiqI",
+            "id": "37i9dQZF1DWW7BONj8RiqI",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000031f8f84b7fc7e801ce150c0e1",
+                "width": null
+              }
+            ],
+            "name": "Massive Soca Hits",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYyOTk2OTEwOSwwMDAwMDAxZjAwMDAwMTdiODFiYWQyMjQwMDAwMDE3YWY4MmNhYmQy",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWW7BONj8RiqI/tracks",
+              "total": 42
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWW7BONj8RiqI"
+          },
+          {
+            "collaborative": false,
+            "description": "Forget it and disappear with chill <a href=\"spotify:genre:edm_dance\">house</a>.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX2TRYkJECvfC"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX2TRYkJECvfC",
+            "id": "37i9dQZF1DX2TRYkJECvfC",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000388165523fdefdb36279ffb99",
+                "width": null
+              }
+            ],
+            "name": "Deep House Relax",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTAyMywwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX2TRYkJECvfC/tracks",
+              "total": 200
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX2TRYkJECvfC"
+          },
+          {
+            "collaborative": false,
+            "description": "The world's biggest dance hits. Featuring new music from LP Giobbi & HANA, Becky Hill & Topic, Caribou and more!",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX4dyzvuaRJ0n"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4dyzvuaRJ0n",
+            "id": "37i9dQZF1DX4dyzvuaRJ0n",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003370da9367bf9b9eb9901d768",
+                "width": null
+              }
+            ],
+            "name": "mint",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTAwOSwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4dyzvuaRJ0n/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX4dyzvuaRJ0n"
+          },
+          {
+            "collaborative": false,
+            "description": "Remixed hits from the last 15 years.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX7D8GQsPKGvy"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX7D8GQsPKGvy",
+            "id": "37i9dQZF1DX7D8GQsPKGvy",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000323f3caaaa5f8bc79a8d92710",
+                "width": null
+              }
+            ],
+            "name": "Remix Hits",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTA0MCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX7D8GQsPKGvy/tracks",
+              "total": 150
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX7D8GQsPKGvy"
+          },
+          {
+            "collaborative": false,
+            "description": "The softer side of dance.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXccH49bh52dB"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXccH49bh52dB",
+            "id": "37i9dQZF1DXccH49bh52dB",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000399d30d1fed5d487ff54420f9",
+                "width": null
+              }
+            ],
+            "name": "Chilled Dance Hits",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTAyMywwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXccH49bh52dB/tracks",
+              "total": 97
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXccH49bh52dB"
+          },
+          {
+            "collaborative": false,
+            "description": "Remixed pop and <a href=\"spotify:genre:edm_dance\">dance</a> collabs. Cover: J Balvin & Skrillex.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXcZDD7cfEKhW"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXcZDD7cfEKhW",
+            "id": "37i9dQZF1DXcZDD7cfEKhW",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003bd2d51e29c832d56847e4a33",
+                "width": null
+              }
+            ],
+            "name": "Pop Remix",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTAwNiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXcZDD7cfEKhW/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXcZDD7cfEKhW"
+          },
+          {
+            "collaborative": false,
+            "description": "<a href=\"spotify:genre:house\">House</a> music lives here. United in one house. Cover: UNIIQU3",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXa8NOEUWPn9W"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXa8NOEUWPn9W",
+            "id": "37i9dQZF1DXa8NOEUWPn9W",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003062e96715fb0f1b45222e14f",
+                "width": null
+              }
+            ],
+            "name": "Housewerk",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDA4MTcwOCwwMDAwMDFiMDAwMDAwMTdiODg3MGYxYTgwMDAwMDE3Yjg4NTY5ZjY4",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXa8NOEUWPn9W/tracks",
+              "total": 101
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXa8NOEUWPn9W"
+          },
+          {
+            "collaborative": false,
+            "description": "Dark & moody progressive house <a href=\"spotify:genre:edm_dance\">& electronic</a> on the late night highway.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX6GJXiuZRisr"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6GJXiuZRisr",
+            "id": "37i9dQZF1DX6GJXiuZRisr",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000309eec532a1a213bc950dff71",
+                "width": null
+              }
+            ],
+            "name": "Night Rider",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTAyMSwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6GJXiuZRisr/tracks",
+              "total": 380
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX6GJXiuZRisr"
+          },
+          {
+            "collaborative": false,
+            "description": "New takes on old classics!",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX1OxnjWYRVU0"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1OxnjWYRVU0",
+            "id": "37i9dQZF1DX1OxnjWYRVU0",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003f87c07aa00a8f07bb4239079",
+                "width": null
+              }
+            ],
+            "name": "Dance Covers",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDAxNTIwMCwwMDAwMDA4YzAwMDAwMTdiODQ3YTFiZTQwMDAwMDE2ZWY0NTYzNzI0",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1OxnjWYRVU0/tracks",
+              "total": 271
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX1OxnjWYRVU0"
+          }
+        ],
         "name": "Dance/Electronic"
       },
       {
@@ -5983,6 +7427,728 @@ function App() {
           }
         ],
         "id": "indie_alt",
+        "playlist": [
+          {
+            "collaborative": false,
+            "description": "Home to all the latest indie jams. Cover: MUNYA",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX7XNgsy4UFju"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX7XNgsy4UFju",
+            "id": "37i9dQZF1DX7XNgsy4UFju",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000030071b49640a4a913a4ee0f71",
+                "width": null
+              }
+            ],
+            "name": "Indie All Stars",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQyMjI1MywwMDAwMDY4MDAwMDAwMTdiOWNiZDNmMmUwMDAwMDE3Yjg2MDFjYjE3",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX7XNgsy4UFju/tracks",
+              "total": 106
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX7XNgsy4UFju"
+          },
+          {
+            "collaborative": false,
+            "description": "Proudly marching to the beat of their own drum. Cover: Exmiranda",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX7oMO417tEZs"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX7oMO417tEZs",
+            "id": "37i9dQZF1DX7oMO417tEZs",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000031d25e1baab3706215de01ab2",
+                "width": null
+              }
+            ],
+            "name": "Outliers",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDI1MTQ2MiwwMDAwMDI5YjAwMDAwMTdiOTI4ZjJlMzMwMDAwMDE3Yjg5NDdhYzkx",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX7oMO417tEZs/tracks",
+              "total": 98
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX7oMO417tEZs"
+          },
+          {
+            "collaborative": false,
+            "description": "La crème de la crème of Montreal's music scene. Photo: Safia Nolin",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX1F430ihQKsD"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1F430ihQKsD",
+            "id": "37i9dQZF1DX1F430ihQKsD",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003762c4c7ce994de78732c192a",
+                "width": null
+              }
+            ],
+            "name": "Montréal Chill",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDE4NTA0MywwMDAwMDFiMTAwMDAwMTdiOGU5OWI2ZDQwMDAwMDE3YjNkYzhkZTdh",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1F430ihQKsD/tracks",
+              "total": 110
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX1F430ihQKsD"
+          },
+          {
+            "collaborative": false,
+            "description": "every main character needs their soundtrack",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX4OzrY981I1W"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4OzrY981I1W",
+            "id": "37i9dQZF1DX4OzrY981I1W",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003d2789b816dfcdc308c56fb33",
+                "width": null
+              }
+            ],
+            "name": "my life is a movie",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTA2NiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4OzrY981I1W/tracks",
+              "total": 75
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX4OzrY981I1W"
+          },
+          {
+            "collaborative": false,
+            "description": "Happy songs by alternative bands. Any listener can connect with these indie jams.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX2sUQwD7tbmL"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX2sUQwD7tbmL",
+            "id": "37i9dQZF1DX2sUQwD7tbmL",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003033194582b613753efeb6e71",
+                "width": null
+              }
+            ],
+            "name": "Feel-Good Indie Rock",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTA2NiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX2sUQwD7tbmL/tracks",
+              "total": 120
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX2sUQwD7tbmL"
+          },
+          {
+            "collaborative": false,
+            "description": "for those who appreciate a curated mood 🌸 ",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX8uc99HoZBLU"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX8uc99HoZBLU",
+            "id": "37i9dQZF1DX8uc99HoZBLU",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003889d42312db8e6aa21d55a34",
+                "width": null
+              }
+            ],
+            "name": "aesthetic",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTA2NiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX8uc99HoZBLU/tracks",
+              "total": 75
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX8uc99HoZBLU"
+          },
+          {
+            "collaborative": false,
+            "description": "Dreamy jams from the best bedroom producers. Cover: Steve Lacy",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXcxvFzl58uP7"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXcxvFzl58uP7",
+            "id": "37i9dQZF1DXcxvFzl58uP7",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000034b871ac05aeb69a5b4b9b655",
+                "width": null
+              }
+            ],
+            "name": "Bedroom Pop",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTA4MCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXcxvFzl58uP7/tracks",
+              "total": 115
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXcxvFzl58uP7"
+          },
+          {
+            "collaborative": false,
+            "description": "Sunny tracks from Mac DeMarco, The Beach Boys, and everyone in between.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWYzpSJHStHHx"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWYzpSJHStHHx",
+            "id": "37i9dQZF1DWYzpSJHStHHx",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000394dfd718283b5154043dd755",
+                "width": null
+              }
+            ],
+            "name": "Surf Rock Sunshine",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTA2NiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWYzpSJHStHHx/tracks",
+              "total": 80
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWYzpSJHStHHx"
+          },
+          {
+            "collaborative": false,
+            "description": "We hear you",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX59NCqCqJtoH"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX59NCqCqJtoH",
+            "id": "37i9dQZF1DX59NCqCqJtoH",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000032a161bae1caf29ef62c71084",
+                "width": null
+              }
+            ],
+            "name": "idk.",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTA2NiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX59NCqCqJtoH/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX59NCqCqJtoH"
+          },
+          {
+            "collaborative": false,
+            "description": "New and approved indie pop. Cover: The Neighbourhood",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWWEcRhUVtL8n"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWWEcRhUVtL8n",
+            "id": "37i9dQZF1DWWEcRhUVtL8n",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003d3520848d9b9586a38ae1b97",
+                "width": null
+              }
+            ],
+            "name": "Indie Pop",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTA4MCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWWEcRhUVtL8n/tracks",
+              "total": 125
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWWEcRhUVtL8n"
+          },
+          {
+            "collaborative": false,
+            "description": "Genre-less. Quality first always. Cover: Caribou",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWWBHeXOYZf74"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWWBHeXOYZf74",
+            "id": "37i9dQZF1DWWBHeXOYZf74",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000030b0bc82751b2e611f2e20803",
+                "width": null
+              }
+            ],
+            "name": "POLLEN",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQzNjQ2OCwwMDAwMDNjZjAwMDAwMTdiOWQ5NjI2MDgwMDAwMDE3Yjg0Mzg5Y2Rl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWWBHeXOYZf74/tracks",
+              "total": 154
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWWBHeXOYZf74"
+          },
+          {
+            "collaborative": false,
+            "description": "melodic gems u can send to friends. nostalgic for the diy days of the burned cd. pinkpantheress ❤️‍🔥",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXdwmD5Q7Gxah"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXdwmD5Q7Gxah",
+            "id": "37i9dQZF1DXdwmD5Q7Gxah",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003888e7c07d0ba053ab62b409f",
+                "width": null
+              }
+            ],
+            "name": "Lorem",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDM1MTE2OSwwMDAwMDJkMjAwMDAwMTdiOTg4MDk2NGMwMDAwMDE3Yjk4NzlkMTNm",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXdwmD5Q7Gxah/tracks",
+              "total": 160
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXdwmD5Q7Gxah"
+          },
+          {
+            "collaborative": false,
+            "description": "The pop leaning side of 2000s indie. Cover: Phoenix",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX9LbdoYID5v7"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX9LbdoYID5v7",
+            "id": "37i9dQZF1DX9LbdoYID5v7",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003c492701ac72b9b4182860a2b",
+                "width": null
+              }
+            ],
+            "name": "Indie Pop 2000s",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTA2NiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX9LbdoYID5v7/tracks",
+              "total": 75
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX9LbdoYID5v7"
+          },
+          {
+            "collaborative": false,
+            "description": "Indie pop that defined the 2010s. Cover: Lana Del Rey",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXaLaoaQqrfyO"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXaLaoaQqrfyO",
+            "id": "37i9dQZF1DXaLaoaQqrfyO",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000031b5b09ac50877cce76580765",
+                "width": null
+              }
+            ],
+            "name": "Indie Pop 2010s",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTA4MCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXaLaoaQqrfyO/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXaLaoaQqrfyO"
+          },
+          {
+            "collaborative": false,
+            "description": "Chill. The best indie tracks for just hanging out.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX9B1hu73DioC"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX9B1hu73DioC",
+            "id": "37i9dQZF1DX9B1hu73DioC",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003a20077cb15561277c30f6eb5",
+                "width": null
+              }
+            ],
+            "name": "Indie Chillout",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTAyMSwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX9B1hu73DioC/tracks",
+              "total": 75
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX9B1hu73DioC"
+          },
+          {
+            "collaborative": false,
+            "description": "Snuggle jams to keep you cozy under the covers.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX6tTW0xDxScH"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6tTW0xDxScH",
+            "id": "37i9dQZF1DX6tTW0xDxScH",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000329e90307d494cc43a1e1f304",
+                "width": null
+              }
+            ],
+            "name": "Stay in Bed",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTAyNiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6tTW0xDxScH/tracks",
+              "total": 75
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX6tTW0xDxScH"
+          },
+          {
+            "collaborative": false,
+            "description": "it's a vibe (◡ ‿ ◡ ✿) cover: Lorde",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX5y8xoSWyhcz"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5y8xoSWyhcz",
+            "id": "37i9dQZF1DX5y8xoSWyhcz",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000343b00f8d62984c15e40b74b9",
+                "width": null
+              }
+            ],
+            "name": "indie pop & chill",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDA5ODEwMiwwMDAwMDJjNTAwMDAwMTdiODk2YjE4MWUwMDAwMDE3Yjg2MGU3MzM5",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5y8xoSWyhcz/tracks",
+              "total": 99
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX5y8xoSWyhcz"
+          },
+          {
+            "collaborative": false,
+            "description": "Classic alternative. These early pioneers brought the underground to the foreground. Cover: Lou Reed",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXdTCdwCKzXwo"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXdTCdwCKzXwo",
+            "id": "37i9dQZF1DXdTCdwCKzXwo",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000036ae33e22093ced41760fb0c0",
+                "width": null
+              }
+            ],
+            "name": "Early Alternative",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTA2NiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXdTCdwCKzXwo/tracks",
+              "total": 75
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXdTCdwCKzXwo"
+          },
+          {
+            "collaborative": false,
+            "description": "All your alternative favorites. Cover: The xx.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX26DKvjp0s9M"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX26DKvjp0s9M",
+            "id": "37i9dQZF1DX26DKvjp0s9M",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000035724a24c8194afcb44984521",
+                "width": null
+              }
+            ],
+            "name": "Essential Indie",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTAyMSwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX26DKvjp0s9M/tracks",
+              "total": 80
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX26DKvjp0s9M"
+          },
+          {
+            "collaborative": false,
+            "description": "absolutely feelin your thrift haul",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX1dvMSwf27JO"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1dvMSwf27JO",
+            "id": "37i9dQZF1DX1dvMSwf27JO",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000039796e27dcad9b0a701fafe47",
+                "width": null
+              }
+            ],
+            "name": "'fit check",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQzMzg2MCwwMDAwMDA1NTAwMDAwMTdiOWQ2ZTVjZDMwMDAwMDE3YjE3N2MzMWU3",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1dvMSwf27JO/tracks",
+              "total": 52
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX1dvMSwf27JO"
+          }
+        ],
         "name": "Indie"
       },
       {
@@ -5995,6 +8161,728 @@ function App() {
           }
         ],
         "id": "sleep",
+        "playlist": [
+          {
+            "collaborative": false,
+            "description": "Gentle ambient piano to help you fall asleep.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWZd79rJ6a7lp"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWZd79rJ6a7lp",
+            "id": "37i9dQZF1DWZd79rJ6a7lp",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003b70e0223f544b1faa2e95ed0",
+                "width": null
+              }
+            ],
+            "name": "Sleep",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYyOTEyNDQxMiwwMDAwMDBkMTAwMDAwMTdiNGY2MWMzMjMwMDAwMDE2Y2Y2OTUyYjAw",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWZd79rJ6a7lp/tracks",
+              "total": 143
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWZd79rJ6a7lp"
+          },
+          {
+            "collaborative": false,
+            "description": "Relax and indulge with beautiful piano pieces",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX4sWSpwq3LiO"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4sWSpwq3LiO",
+            "id": "37i9dQZF1DX4sWSpwq3LiO",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003ca5a7517156021292e5663a6",
+                "width": null
+              }
+            ],
+            "name": "Peaceful Piano",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDM5ODYxNywwMDAwMDEwMTAwMDAwMTdiOWI1NDk5NWQwMDAwMDE2ZDE1NTk1OTFk",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4sWSpwq3LiO/tracks",
+              "total": 377
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX4sWSpwq3LiO"
+          },
+          {
+            "collaborative": false,
+            "description": "Soothing, minimalist ambient for deep sleep.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWYcDQ1hSjOpY"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWYcDQ1hSjOpY",
+            "id": "37i9dQZF1DWYcDQ1hSjOpY",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003c601a6a746366286845b8fda",
+                "width": null
+              }
+            ],
+            "name": "Deep Sleep",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYyOTM3OTg5OCwwMDAwMDA1ZTAwMDAwMTdiNWU5YzJhZDUwMDAwMDE2ZDE1MjI3Zjk3",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWYcDQ1hSjOpY/tracks",
+              "total": 215
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWYcDQ1hSjOpY"
+          },
+          {
+            "collaborative": false,
+            "description": "Soothing instrumental music for sleepy babies.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX0DxcHtn4Hwo"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX0DxcHtn4Hwo",
+            "id": "37i9dQZF1DX0DxcHtn4Hwo",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003eb12904dbf44afa59d6ab9ef",
+                "width": null
+              }
+            ],
+            "name": "Baby Sleep",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYyOTM4MTAxMywwMDAwMDA5YTAwMDAwMTdiNWVhZDJmMDUwMDAwMDE3MGM0Y2Y4YWM3",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX0DxcHtn4Hwo/tracks",
+              "total": 290
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX0DxcHtn4Hwo"
+          },
+          {
+            "collaborative": false,
+            "description": "Pouring rain and occasional rolling thunder.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXbcPC6Vvqudd"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXbcPC6Vvqudd",
+            "id": "37i9dQZF1DXbcPC6Vvqudd",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000393fe06c436d719d3f31107d0",
+                "width": null
+              }
+            ],
+            "name": "Night Rain",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYyOTM4MDU1NCwwMDAwMDA0ZTAwMDAwMTdiNWVhNjJkZGIwMDAwMDE3MGM0OWExMzVj",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXbcPC6Vvqudd/tracks",
+              "total": 379
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXbcPC6Vvqudd"
+          },
+          {
+            "collaborative": false,
+            "description": "Ambient drone to make you feel weightless.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX1n9whBbBKoL"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1n9whBbBKoL",
+            "id": "37i9dQZF1DX1n9whBbBKoL",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003d33da3d4e483709cb1b33c8b",
+                "width": null
+              }
+            ],
+            "name": "Floating Through Space",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYyOTQ1MTcyMywwMDAwMDA2NDAwMDAwMTdiNjJlNDIzYWMwMDAwMDE2ZDAwYzU0ODJk",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1n9whBbBKoL/tracks",
+              "total": 131
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX1n9whBbBKoL"
+          },
+          {
+            "collaborative": false,
+            "description": "Welcome to the soothing hum...",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWUZ5bk6qqDSy"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWUZ5bk6qqDSy",
+            "id": "37i9dQZF1DWUZ5bk6qqDSy",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000035654f5615b2aec45465d0fd2",
+                "width": null
+              }
+            ],
+            "name": "White Noise",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYyOTM4MjUwNCwwMDAwMDAzZDAwMDAwMTdiNWVjM2YxNGUwMDAwMDE2ZDAwYzlhOWI5",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWUZ5bk6qqDSy/tracks",
+              "total": 247
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWUZ5bk6qqDSy"
+          },
+          {
+            "collaborative": false,
+            "description": "Comforting sounds of thunder and rain.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX4aYNO8X5RpR"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4aYNO8X5RpR",
+            "id": "37i9dQZF1DX4aYNO8X5RpR",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003d4256662593ef9ad7707f4a3",
+                "width": null
+              }
+            ],
+            "name": "Nightstorms",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYyOTQ1MTk5MiwwMDAwMDAzZjAwMDAwMTdiNjJlODNlODMwMDAwMDE2Y2Y2OTFhZTUw",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4aYNO8X5RpR/tracks",
+              "total": 175
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX4aYNO8X5RpR"
+          },
+          {
+            "collaborative": false,
+            "description": "Calm piano music for sleeping.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX03b46zi3S82"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX03b46zi3S82",
+            "id": "37i9dQZF1DX03b46zi3S82",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000038257266b22638a81f18ad2bb",
+                "width": null
+              }
+            ],
+            "name": "Sleepy Piano",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQxNDc2MSwwMDAwMDA2MDAwMDAwMTdiOWM0YWVjNTkwMDAwMDE3MGM0YzM2OWFl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX03b46zi3S82/tracks",
+              "total": 178
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX03b46zi3S82"
+          },
+          {
+            "collaborative": false,
+            "description": "Let these jazz tracks lull you to sleep.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXa1rZf8gLhyz"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXa1rZf8gLhyz",
+            "id": "37i9dQZF1DXa1rZf8gLhyz",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000308e683238978c7d578b96046",
+                "width": null
+              }
+            ],
+            "name": "Jazz for Sleep",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQxNDI3OSwwMDAwMDA3NjAwMDAwMTdiOWM0Mzk1MmYwMDAwMDE2ZDAwYjRhZjc4",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXa1rZf8gLhyz/tracks",
+              "total": 102
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXa1rZf8gLhyz"
+          },
+          {
+            "collaborative": false,
+            "description": "Drift off to these peaceful <a href=\"spotify:genre:classical\">classical</a> melodies.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX8Sz1gsYZdwj"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX8Sz1gsYZdwj",
+            "id": "37i9dQZF1DX8Sz1gsYZdwj",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000038f5b6bf8fd58ce6ab15e037a",
+                "width": null
+              }
+            ],
+            "name": "Classical Sleep",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYyNTQ3ODMxNiwwMDAwMDA1MTAwMDAwMTdhNzYwZWMxYjMwMDAwMDE2ZWEyMGM1NmVj",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX8Sz1gsYZdwj/tracks",
+              "total": 54
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX8Sz1gsYZdwj"
+          },
+          {
+            "collaborative": false,
+            "description": "Soft instrumental lullabies for the little ones.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX8skPjZYk8mL"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX8skPjZYk8mL",
+            "id": "37i9dQZF1DX8skPjZYk8mL",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003376ec73aae90a63b4a6dcae8",
+                "width": null
+              }
+            ],
+            "name": "Sweet Lullabies",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYyOTQ1NDUyMywwMDAwMDAzNzAwMDAwMTdiNjMwZWRiZGMwMDAwMDE3MTNlZjQyN2Ex",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX8skPjZYk8mL/tracks",
+              "total": 335
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX8skPjZYk8mL"
+          },
+          {
+            "collaborative": false,
+            "description": "Hypnotic bliss.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWSiZVO2J6WeI"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWSiZVO2J6WeI",
+            "id": "37i9dQZF1DWSiZVO2J6WeI",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003cef1e1e83454017583e8bd8f",
+                "width": null
+              }
+            ],
+            "name": "Dreamy Vibes",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTA2NywwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWSiZVO2J6WeI/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWSiZVO2J6WeI"
+          },
+          {
+            "collaborative": false,
+            "description": "A series of soothing sounds to softly send you to sweet, sweet slumber.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWStLt4f1zJ6I"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWStLt4f1zJ6I",
+            "id": "37i9dQZF1DWStLt4f1zJ6I",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003ec54f98c4528e2e50687dc23",
+                "width": null
+              }
+            ],
+            "name": "Songs For Sleeping",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTU4NjM0MjUwOSwwMDAwMDAxZjAwMDAwMTcxNTk2MWJkMDQwMDAwMDE3MTU5NjFhMjli",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWStLt4f1zJ6I/tracks",
+              "total": 99
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWStLt4f1zJ6I"
+          },
+          {
+            "collaborative": false,
+            "description": "Relaxing music and sounds for sleeping.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX3WdioUzkg8I"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX3WdioUzkg8I",
+            "id": "37i9dQZF1DX3WdioUzkg8I",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003488a5e28d03a93158dfe9517",
+                "width": null
+              }
+            ],
+            "name": "Fall Asleep",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYyOTIwNzI1MywwMDAwMDAzOTAwMDAwMTdiNTQ1MWQyMDQwMDAwMDE3MDNlZmI3ZWYz",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX3WdioUzkg8I/tracks",
+              "total": 131
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX3WdioUzkg8I"
+          },
+          {
+            "collaborative": false,
+            "description": "Music to reduce insomnia and help you relax.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWSUFOo47GEsI"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWSUFOo47GEsI",
+            "id": "37i9dQZF1DWSUFOo47GEsI",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000360fd1f89de6186b9f4d2fa80",
+                "width": null
+              }
+            ],
+            "name": "Sleep Tight",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYyOTgwMjc2MiwwMDAwMDA3ZDAwMDAwMTdiNzdkMDkxZjUwMDAwMDE3OTBlOTllNTIx",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWSUFOo47GEsI/tracks",
+              "total": 183
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWSUFOo47GEsI"
+          },
+          {
+            "collaborative": false,
+            "description": "Relax to the sound of the ocean.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX9if5QDLdzCa"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX9if5QDLdzCa",
+            "id": "37i9dQZF1DX9if5QDLdzCa",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000338bb888ae431d514d3c6bce2",
+                "width": null
+              }
+            ],
+            "name": "Ocean Escapes",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYyOTczNDgyNSwwMDAwMDA1NzAwMDAwMTdiNzNjM2VkNmMwMDAwMDE2ZDE1M2M1NjU5",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX9if5QDLdzCa/tracks",
+              "total": 178
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX9if5QDLdzCa"
+          },
+          {
+            "collaborative": false,
+            "description": "Soothing sounds of gentle rains.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX2mFmJUZg4Mp"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX2mFmJUZg4Mp",
+            "id": "37i9dQZF1DX2mFmJUZg4Mp",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003790c93c80d91424b1242b628",
+                "width": null
+              }
+            ],
+            "name": "Gentle Rains",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYyOTczNDQzMiwwMDAwMDAzMTAwMDAwMTdiNzNiZGVkNWQwMDAwMDE2ZDE1M2I2MDM1",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX2mFmJUZg4Mp/tracks",
+              "total": 163
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX2mFmJUZg4Mp"
+          },
+          {
+            "collaborative": false,
+            "description": "Put yourself to sleep with delta frequencies.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX8h3zQNo57xG"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX8h3zQNo57xG",
+            "id": "37i9dQZF1DX8h3zQNo57xG",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000381ec7988ec71538c082730e1",
+                "width": null
+              }
+            ],
+            "name": "Binaural Beats Sleep",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYyOTIwODUwNCwwMDAwMDAzZjAwMDAwMTdiNTQ2NGU3YjQwMDAwMDE3MWYzNGZjZDIy",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX8h3zQNo57xG/tracks",
+              "total": 76
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX8h3zQNo57xG"
+          },
+          {
+            "collaborative": false,
+            "description": "Relax and fall asleep to ASMR trigger sounds (no talking).",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWUAeTOoyNaqm"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWUAeTOoyNaqm",
+            "id": "37i9dQZF1DWUAeTOoyNaqm",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000328bb958d28682eacbdf45389",
+                "width": null
+              }
+            ],
+            "name": "ASMR Sleep",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTA5MCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWUAeTOoyNaqm/tracks",
+              "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWUAeTOoyNaqm"
+          }
+        ],
         "name": "Sleep"
       },
       {
@@ -6007,20 +8895,731 @@ function App() {
           }
         ],
         "id": "inspirational",
-        "name": "Christian & Gospel"
-      },
-      {
-        "href": "https://api.spotify.com/v1/browse/categories/regional_mexican",
-        "icons": [
+        "playlist": [
           {
-            "height": null,
-            "url": "https://t.scdn.co/images/c765fa1ce6994fce8796d2d0d93c1e61.jpeg",
-            "width": null
+            "collaborative": false,
+            "description": "The best mix of today's Christian music worldwide.  Cover: Mike Donehey",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXcb6CQIjdqKy"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXcb6CQIjdqKy",
+            "id": "37i9dQZF1DXcb6CQIjdqKy",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000303fb76f2326ddf645338103f",
+                "width": null
+              }
+            ],
+            "name": "Top Christian",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDA0NzY0NCwwMDAwMDUwOTAwMDAwMTdiODY2OTJhZGEwMDAwMDE3Yjg1ZTIxNmNl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXcb6CQIjdqKy/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXcb6CQIjdqKy"
+          },
+          {
+            "collaborative": false,
+            "description": "The experience of live worship lives here. Cover: Maverick City Music",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXdrxKdrXE2Vk"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXdrxKdrXE2Vk",
+            "id": "37i9dQZF1DXdrxKdrXE2Vk",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003d0c4b07e1d05278a0c9b8938",
+                "width": null
+              }
+            ],
+            "name": "Best of Live Worship",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYyOTUxMjEwNiwwMDAwMDA1YjAwMDAwMTdiNjY3ZDgyYmEwMDAwMDE3YTFjOWE5MDEz",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXdrxKdrXE2Vk/tracks",
+              "total": 95
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXdrxKdrXE2Vk"
+          },
+          {
+            "collaborative": false,
+            "description": "Everyday. Every time.  These are the songs you can count on. Always.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXbQ1kpdsa9FU"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXbQ1kpdsa9FU",
+            "id": "37i9dQZF1DXbQ1kpdsa9FU",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000037ffbda2f68a937cf3771ccdf",
+                "width": null
+              }
+            ],
+            "name": "Everyday Inspiration",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTE2OCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXbQ1kpdsa9FU/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXbQ1kpdsa9FU"
+          },
+          {
+            "collaborative": false,
+            "description": "Experience today's best Worship music. Cover:  Elevation Worship",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWVYgpMbMPJMz"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWVYgpMbMPJMz",
+            "id": "37i9dQZF1DWVYgpMbMPJMz",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000034ee2f1e2847356d9510ac09c",
+                "width": null
+              }
+            ],
+            "name": "WorshipNow",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDA1MTcxMSwwMDAwMDRhYTAwMDAwMTdiODZhNzM4YzEwMDAwMDE3Yjg2MWY0MGRl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWVYgpMbMPJMz/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWVYgpMbMPJMz"
+          },
+          {
+            "collaborative": false,
+            "description": "Recent smashes from your favorite Christian Contemporary artists.  Cover: Shane & Shane",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX5SzTPIoCKiv"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5SzTPIoCKiv",
+            "id": "37i9dQZF1DX5SzTPIoCKiv",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000033950615883eab72b489aa6b6",
+                "width": null
+              }
+            ],
+            "name": "Christian Mix",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTE0MSwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5SzTPIoCKiv/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX5SzTPIoCKiv"
+          },
+          {
+            "collaborative": false,
+            "description": "New songs from some of the latest and greatest Gospel music artists. Cover: Travis Greene",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWUMIjnZuaulx"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWUMIjnZuaulx",
+            "id": "37i9dQZF1DWUMIjnZuaulx",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003c073f13c436f9d36385a506f",
+                "width": null
+              }
+            ],
+            "name": "Fresh Gospel",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDA0OTU1NiwwMDAwMDQyODAwMDAwMTdiODY4NjU4OWUwMDAwMDE3YjYyNGMwNjdm",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWUMIjnZuaulx/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWUMIjnZuaulx"
+          },
+          {
+            "collaborative": false,
+            "description": "The best new tracks of all genres of Christian, Gospel, Worship & Inspirational music.  Cover: SWITCH",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWVtgG63SDdt8"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWVtgG63SDdt8",
+            "id": "37i9dQZF1DWVtgG63SDdt8",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000033cea9616d4a764e49a1686f5",
+                "width": null
+              }
+            ],
+            "name": "New Music Friday Christian",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDAzNzUwMywwMDAwMDRmMDAwMDAwMTdiODVjZTZkMDEwMDAwMDE3Yjg1YWFkNzFk",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWVtgG63SDdt8/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWVtgG63SDdt8"
+          },
+          {
+            "collaborative": false,
+            "description": "The top Christian songs worldwide!  Cover: Lauren Daigle",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXdgckExLlG1g"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXdgckExLlG1g",
+            "id": "37i9dQZF1DXdgckExLlG1g",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000360a4f9d5efdac59d0b007695",
+                "width": null
+              }
+            ],
+            "name": "Most Favored",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTU5NzQyNzYzMCwwMDAwMDAxNzAwMDAwMTczZWUxYjQzMGQwMDAwMDE3MGM0YzZlNzg3",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXdgckExLlG1g/tracks",
+              "total": 75
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXdgckExLlG1g"
+          },
+          {
+            "collaborative": false,
+            "description": "Majestic and bold, these new and known worship songs are great for every day.  Cover artist: <a href=\"https://open.spotify.com/artist/0Onvkz1Nbs4wHXXUwOIGk8/\">Jesus Culture</a>",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWVlWpJblBvap"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWVlWpJblBvap",
+            "id": "37i9dQZF1DWVlWpJblBvap",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000391d3cf2d340e886bf352f5d1",
+                "width": null
+              }
+            ],
+            "name": "Songs of Glory",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTE0MSwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWVlWpJblBvap/tracks",
+              "total": 80
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWVlWpJblBvap"
+          },
+          {
+            "collaborative": false,
+            "description": "The country way of testifying. \nCover: Jimmie Allen",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWU2LcZVHsTdv"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWU2LcZVHsTdv",
+            "id": "37i9dQZF1DWU2LcZVHsTdv",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003a4884f9b53eb7e6451efbe16",
+                "width": null
+              }
+            ],
+            "name": "Country by the Grace of God",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYyODgxNTUzMiwwMDAwMDA3OTAwMDAwMTdiM2NmOGEyZmYwMDAwMDE3YWY4NDhhMTBl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWU2LcZVHsTdv/tracks",
+              "total": 80
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWU2LcZVHsTdv"
+          },
+          {
+            "collaborative": false,
+            "description": "Breathe in deep with arms wide open in worship. This is going to be epic!",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWZoR0U5SzE1r"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWZoR0U5SzE1r",
+            "id": "37i9dQZF1DWZoR0U5SzE1r",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003b7c646dff50272449c260bfc",
+                "width": null
+              }
+            ],
+            "name": "epicPRAISE",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTE0MSwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWZoR0U5SzE1r/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWZoR0U5SzE1r"
+          },
+          {
+            "collaborative": false,
+            "description": "Go deep into spontaneous praise and worship here. On and on.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX5pEiFLSS7sX"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5pEiFLSS7sX",
+            "id": "37i9dQZF1DX5pEiFLSS7sX",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000035e3e08bd419c141c49259c88",
+                "width": null
+              }
+            ],
+            "name": "Signs & Wonders",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTE0MiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5pEiFLSS7sX/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX5pEiFLSS7sX"
+          },
+          {
+            "collaborative": false,
+            "description": "Tune in here for new and current hits in Contemporary Christian music!  Cover: Danny Gokey",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWUileP28ODwg"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWUileP28ODwg",
+            "id": "37i9dQZF1DWUileP28ODwg",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003c5f9db40ec3aa9a7f8db6693",
+                "width": null
+              }
+            ],
+            "name": "Top Christian Contemporary",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYyODg0NTM0NywwMDAwMDA4OTAwMDAwMTdiM2ViZjk0OTgwMDAwMDE3OThkOWZhOTli",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWUileP28ODwg/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWUileP28ODwg"
+          },
+          {
+            "collaborative": false,
+            "description": "Celebrating the women of worship music! Cover: Lauren Daigle",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWVrSccL9KVUt"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWVrSccL9KVUt",
+            "id": "37i9dQZF1DWVrSccL9KVUt",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000038f9dd3c372713263476ee837",
+                "width": null
+              }
+            ],
+            "name": "Women of Worship",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYxNDcyNzE0OSwwMDAwMDAwZjAwMDAwMTc3ZjUzY2Y2ZTYwMDAwMDE3N2VmOThhNDhm",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWVrSccL9KVUt/tracks",
+              "total": 75
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWVrSccL9KVUt"
+          },
+          {
+            "collaborative": false,
+            "description": "Songs of deep relationships to inspire your journey with each other.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWYhr4P5Boce5"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWYhr4P5Boce5",
+            "id": "37i9dQZF1DWYhr4P5Boce5",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003bf2b62041edc220a40bf1f02",
+                "width": null
+              }
+            ],
+            "name": "Going Together",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTU5MjI1NjA1OCwwMDAwMDAwZTAwMDAwMTcyYjlkYjUyZGEwMDAwMDE3MGM0YzRhODNm",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWYhr4P5Boce5/tracks",
+              "total": 67
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWYhr4P5Boce5"
+          },
+          {
+            "collaborative": false,
+            "description": "Experience the powerful messages and sounds of these gospel tunes.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX7OIddoQVdRt"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX7OIddoQVdRt",
+            "id": "37i9dQZF1DX7OIddoQVdRt",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003a88ac8a27dd714bacc2d9ddd",
+                "width": null
+              }
+            ],
+            "name": "Spread the Gospel",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTE0MywwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX7OIddoQVdRt/tracks",
+              "total": 40
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX7OIddoQVdRt"
+          },
+          {
+            "collaborative": false,
+            "description": "A mix of EDM, Pop, Hip Hop, Worship, and remixes!  Discover songs from artists defining the sound of now and tomorrow!",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWUUPO0Sbx2CM"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWUUPO0Sbx2CM",
+            "id": "37i9dQZF1DWUUPO0Sbx2CM",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003246c92acc8513a9234516a4d",
+                "width": null
+              }
+            ],
+            "name": "Christian Dance Party",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTEzNCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWUUPO0Sbx2CM/tracks",
+              "total": 75
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWUUPO0Sbx2CM"
+          },
+          {
+            "collaborative": false,
+            "description": "Sometimes upbeat, sometimes chill, these songs will encourage you and warm your heart and soul.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWXKWi9FunemC"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWXKWi9FunemC",
+            "id": "37i9dQZF1DWXKWi9FunemC",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003147e0fb406a63b4b495931db",
+                "width": null
+              }
+            ],
+            "name": "Love Coffee, Love Jesus",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTE1MCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWXKWi9FunemC/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWXKWi9FunemC"
+          },
+          {
+            "collaborative": false,
+            "description": "Emerging sounds in worship from everywhere.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX7fPhUztqfIX"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX7fPhUztqfIX",
+            "id": "37i9dQZF1DX7fPhUztqfIX",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000036bfa4a353400e9179aa15e2f",
+                "width": null
+              }
+            ],
+            "name": "New & Bold",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NTE0MywwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX7fPhUztqfIX/tracks",
+              "total": 130
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX7fPhUztqfIX"
+          },
+          {
+            "collaborative": false,
+            "description": "Leave no rock undiscovered and explore the essential foundations of Christian rock.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWZCJsgK4Sw8Y"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWZCJsgK4Sw8Y",
+            "id": "37i9dQZF1DWZCJsgK4Sw8Y",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003fdfb5eba12c8ec4e496608c2",
+                "width": null
+              }
+            ],
+            "name": "Cornerstones",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYyNzYxNzY2MCwwMDAwMDAwODAwMDAwMTdhZjU5MjhjZWYwMDAwMDE3MGFmMzkyZjI2",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWZCJsgK4Sw8Y/tracks",
+              "total": 87
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWZCJsgK4Sw8Y"
           }
         ],
-        "id": "regional_mexican",
-        "name": "Regional Mexican"
+        "name": "Christian & Gospel"
       },
+      // completed
       {
         "href": "https://api.spotify.com/v1/browse/categories/student",
         "icons": [
