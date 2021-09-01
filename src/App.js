@@ -24,24 +24,6 @@ import MoodStrip from './components/MoodStrip/MoodStrip';
         return token;
     }
 
-    const __getPlayList = async (category_id) => {
-      // #️⃣  receving token from spotify
-      const token = await _getToken();
-      // 🕊 fetch call - playlist
-      const result = await fetch(`https://api.spotify.com/v1/browse/categories/${category_id}/playlists`, {
-        method: 'GET',
-         headers: { 'Authorization' : 'Bearer ' + token}
-      });
-
-
-      //calling playlist API 🕊   and parsing
-      const playlist = await result.json();
-      console.log(playlist);
-      //
-      //PLAYLIST ARRAY
-      return playlist;
-    }
-
     // Featured Playlists
     const __getFeaturedPlayList = async () => {
 
@@ -2307,6 +2289,728 @@ function App() {
           }
         ],
         "id": "country",
+        "playlist": [
+          {
+            "collaborative": false,
+            "description": "Today's top country hits of the week, worldwide! Cover: Nelly and Florida Georgia Line",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX1lVhptIYRda"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1lVhptIYRda",
+            "id": "37i9dQZF1DX1lVhptIYRda",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000391afffed63a1f2251b3dde70",
+                "width": null
+              }
+            ],
+            "name": "Hot Country",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDAzNjg2MCwwMDAwMDMyNTAwMDAwMTdiODVjNDljZjQwMDAwMDE3YjdkZmFiMDA1",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1lVhptIYRda/tracks",
+              "total": 53
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX1lVhptIYRda"
+          },
+          {
+            "collaborative": false,
+            "description": "New Music Discovery is what we're about.  Try it on for size. Cover: Niko Moon",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX8S0uQvJ4gaa"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX8S0uQvJ4gaa",
+            "id": "37i9dQZF1DX8S0uQvJ4gaa",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000031f401b72e7e5e6bef136dec1",
+                "width": null
+              }
+            ],
+            "name": "New Boots",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDA3NjY0NSwwMDAwMDI3MTAwMDAwMTdiODgyM2FmNjEwMDAwMDE3Yjg4MGM2NzRi",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX8S0uQvJ4gaa/tracks",
+              "total": 101
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX8S0uQvJ4gaa"
+          },
+          {
+            "collaborative": false,
+            "description": "The perfect soundtrack recipe for a backyard barbecue! ",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXbIbVYph0Zr5"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXbIbVYph0Zr5",
+            "id": "37i9dQZF1DXbIbVYph0Zr5",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000033c5a340bdd0bc167ad56f064",
+                "width": null
+              }
+            ],
+            "name": "Country Cookout",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDMwMiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXbIbVYph0Zr5/tracks",
+              "total": 120
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXbIbVYph0Zr5"
+          },
+          {
+            "collaborative": false,
+            "description": "The soundtrack to the CMA's 2021 event of the summer, airing Thursday, September 2nd at 8/7c on ABC.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX4yQ5BwwlSiC"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4yQ5BwwlSiC",
+            "id": "37i9dQZF1DX4yQ5BwwlSiC",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003852768991c9a97abf46110af",
+                "width": null
+              }
+            ],
+            "name": "CMA Summer Jam",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYyOTcyOTgxOSwwMDAwMDAwOTAwMDAwMTdiNzM3NzhiZWUwMDAwMDE3YjYwMWUzNzIz",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4yQ5BwwlSiC/tracks",
+              "total": 45
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX4yQ5BwwlSiC"
+          },
+          {
+            "collaborative": false,
+            "description": "Country music to get you back to the basics.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWTkxQvqMy4WW"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWTkxQvqMy4WW",
+            "id": "37i9dQZF1DWTkxQvqMy4WW",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003f5b078962d37890234b76125",
+                "width": null
+              }
+            ],
+            "name": "Chillin' on a Dirt Road",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDI4NywwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWTkxQvqMy4WW/tracks",
+              "total": 80
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWTkxQvqMy4WW"
+          },
+          {
+            "collaborative": false,
+            "description": "Country that made Country Cool! Cover:  Shania Twain",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWVpjAJGB70vU"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWVpjAJGB70vU",
+            "id": "37i9dQZF1DWVpjAJGB70vU",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000030b52aec88b0f048242888473",
+                "width": null
+              }
+            ],
+            "name": "90's Country",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYxNjEyNjUyMCwwMDAwMDAzMjAwMDAwMTc4NDhhNWFiMmYwMDAwMDE3NGRmZWViMDhm",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWVpjAJGB70vU/tracks",
+              "total": 60
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWVpjAJGB70vU"
+          },
+          {
+            "collaborative": false,
+            "description": "The perfect soundtrack for a day on the water. ",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXcSzYlwgjiSi"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXcSzYlwgjiSi",
+            "id": "37i9dQZF1DXcSzYlwgjiSi",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000031ce469c867c1c6e1cc7f815b",
+                "width": null
+              }
+            ],
+            "name": "Party Cove",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYyOTQyOTgxNywwMDAwMDAxYjAwMDAwMTdiNjE5NWUxMDUwMDAwMDE3MmUxYzkwZWJi",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXcSzYlwgjiSi/tracks",
+              "total": 115
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXcSzYlwgjiSi"
+          },
+          {
+            "collaborative": false,
+            "description": "A decade full of 00s country hits! Cover: Keith Urban, Carrie Underwood, Kenny Chesney",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXdxUH6sNtcDe"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXdxUH6sNtcDe",
+            "id": "37i9dQZF1DXdxUH6sNtcDe",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000030f89886755bdd709f0bd6e10",
+                "width": null
+              }
+            ],
+            "name": "2000s Country",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDMwNCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXdxUH6sNtcDe/tracks",
+              "total": 125
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXdxUH6sNtcDe"
+          },
+          {
+            "collaborative": false,
+            "description": "Need to get your energy level up? This will help!",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWXLSRKeL7KwM"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWXLSRKeL7KwM",
+            "id": "37i9dQZF1DWXLSRKeL7KwM",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003a46a02f3aaeccdaa10eba231",
+                "width": null
+              }
+            ],
+            "name": "Energy Booster: Country",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDMwNCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWXLSRKeL7KwM/tracks",
+              "total": 150
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWXLSRKeL7KwM"
+          },
+          {
+            "collaborative": false,
+            "description": "The most memorable country hits from the 2010's. Cover: Miranda Lambert, Luke Bryan and Jason Aldean.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWXdiK4WAVRUW"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWXdiK4WAVRUW",
+            "id": "37i9dQZF1DWXdiK4WAVRUW",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003e5a3bb0260aaf546544ca88b",
+                "width": null
+              }
+            ],
+            "name": "2010s Country",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDMwMiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWXdiK4WAVRUW/tracks",
+              "total": 200
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWXdiK4WAVRUW"
+          },
+          {
+            "collaborative": false,
+            "description": "Country's Top 50 most played songs—in the world. Updated weekly. Formerly Nashville's Worldwide Hot 50.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX7aUUBCKwo4Y"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX7aUUBCKwo4Y",
+            "id": "37i9dQZF1DX7aUUBCKwo4Y",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000030fb6fbf815c9b2586773f942",
+                "width": null
+              }
+            ],
+            "name": "Country Worldwide Hot 50",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYyOTg4OTIwMCwwMDAwMDBiOTAwMDAwMTdiN2NmNzgwMGUwMDAwMDE3YWM5ODU5NTg0",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX7aUUBCKwo4Y/tracks",
+              "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX7aUUBCKwo4Y"
+          },
+          {
+            "collaborative": false,
+            "description": "Spotify Fan Favorites from the last few years.  Artist: Billy Currington",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWYnwbYQ5HnZU"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWYnwbYQ5HnZU",
+            "id": "37i9dQZF1DWYnwbYQ5HnZU",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003bfebccbe6476372195b35d88",
+                "width": null
+              }
+            ],
+            "name": "Country Gold",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYyNzc5MDQwMCwwMDAwMDEwMDAwMDAwMTdhZmZkZTVhYTQwMDAwMDE3YWY3ZmE4NTQ0",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWYnwbYQ5HnZU/tracks",
+              "total": 74
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWYnwbYQ5HnZU"
+          },
+          {
+            "collaborative": false,
+            "description": "Nothing but beautiful country love songs. ",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX8WMG8VPSOJC"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX8WMG8VPSOJC",
+            "id": "37i9dQZF1DX8WMG8VPSOJC",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000031416f67f937b9ee33b3753e2",
+                "width": null
+              }
+            ],
+            "name": "Country Kind of Love",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDMwNiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX8WMG8VPSOJC/tracks",
+              "total": 85
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX8WMG8VPSOJC"
+          },
+          {
+            "collaborative": false,
+            "description": "The top country hits of the week across America! Cover: Miranda Lambert\n",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXaJXCbmtHVHV"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXaJXCbmtHVHV",
+            "id": "37i9dQZF1DXaJXCbmtHVHV",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000038e11476880300fd6d8880fe5",
+                "width": null
+              }
+            ],
+            "name": "Big Country",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDM0MDY4MCwwMDAwMDA4YTAwMDAwMTdiOTdlMDhkMDkwMDAwMDE3YWY4MGYwYmQw",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXaJXCbmtHVHV/tracks",
+              "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXaJXCbmtHVHV"
+          },
+          {
+            "collaborative": false,
+            "description": "A compilation of the all-time biggest hits in Country Music.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWZBCPUIUs2iR"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWZBCPUIUs2iR",
+            "id": "37i9dQZF1DWZBCPUIUs2iR",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000321252477d94bc3cffbbb189f",
+                "width": null
+              }
+            ],
+            "name": "Country's Greatest Hits",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYxODk3NDE0OCwwMDAwMDAwODAwMDAwMTc4ZjI2MTA4NzAwMDAwMDE3OGYyNjA5ZmNh",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWZBCPUIUs2iR/tracks",
+              "total": 99
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWZBCPUIUs2iR"
+          },
+          {
+            "collaborative": false,
+            "description": "A fun library of country hits to pass on to the next generation!",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWVFzWmxRnRJH"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWVFzWmxRnRJH",
+            "id": "37i9dQZF1DWVFzWmxRnRJH",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003bd9929112e8499738fa598cf",
+                "width": null
+              }
+            ],
+            "name": "Raised on Country",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDMwMywwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWVFzWmxRnRJH/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWVFzWmxRnRJH"
+          },
+          {
+            "collaborative": false,
+            "description": "The decade when New Traditional artists like George Strait, Reba McEntire, and Randy Travis dominated the Country scene.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX6RCydf9ytsj"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6RCydf9ytsj",
+            "id": "37i9dQZF1DX6RCydf9ytsj",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000397ccc4082777009c87e97202",
+                "width": null
+              }
+            ],
+            "name": "80s Country",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDMwNCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6RCydf9ytsj/tracks",
+              "total": 163
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX6RCydf9ytsj"
+          },
+          {
+            "collaborative": false,
+            "description": "Country Music that ROCKS!!  \nCover:  Jackson Dean",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWWH0izG4erma"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWWH0izG4erma",
+            "id": "37i9dQZF1DWWH0izG4erma",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003aab8661b512185306ee01f9e",
+                "width": null
+              }
+            ],
+            "name": "Country Rocks",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDAzNjg2MCwwMDAwMDA5MTAwMDAwMTdiODVjNDljZTcwMDAwMDE3YWY3ZmZmMDQy",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWWH0izG4erma/tracks",
+              "total": 106
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWWH0izG4erma"
+          },
+          {
+            "collaborative": false,
+            "description": "Recent tracks from the Hot Country playlist that are still smokin'.  Cover: Jordan Davis",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX6rVyqO2FaN8"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6rVyqO2FaN8",
+            "id": "37i9dQZF1DX6rVyqO2FaN8",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003eb4d4d317e698cafac33d375",
+                "width": null
+              }
+            ],
+            "name": "Still Hot",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDAzNzE2MCwwMDAwMDA4MTAwMDAwMTdiODVjOTMwOWMwMDAwMDE3YWY4MTMyZGJi",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6rVyqO2FaN8/tracks",
+              "total": 56
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX6rVyqO2FaN8"
+          },
+          {
+            "collaborative": false,
+            "description": "Top trending new and recent tracks from the last few weeks.  Cover: Callista Clark",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWW7RgkOJG32Y"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWW7RgkOJG32Y",
+            "id": "37i9dQZF1DWW7RgkOJG32Y",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000366747e5fa67c5927803b1d40",
+                "width": null
+              }
+            ],
+            "name": "Breakout Country",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDAzNjg2MCwwMDAwMDFlZDAwMDAwMTdiODVjNDljYzMwMDAwMDE3YWY4MGM1MmVk",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWW7RgkOJG32Y/tracks",
+              "total": 76
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWW7RgkOJG32Y"
+          }
+        ],
         "name": "Country"
       },
       {
@@ -2319,6 +3023,728 @@ function App() {
           }
         ],
         "id": "rock",
+        "playlist": [
+          {
+            "collaborative": false,
+            "description": "The hottest tunes in rock. Crank it up! Cover: Danko Jones",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX8jpyvTAre41"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX8jpyvTAre41",
+            "id": "37i9dQZF1DX8jpyvTAre41",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000377523c425fe8bf601b7b254f",
+                "width": null
+              }
+            ],
+            "name": "Rock Your Block",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDA5Mzc3OSwwMDAwMDJkYjAwMDAwMTdiODkyOTIyMDQwMDAwMDE3Yjg1YWE4NDZh",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX8jpyvTAre41/tracks",
+              "total": 95
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX8jpyvTAre41"
+          },
+          {
+            "collaborative": false,
+            "description": "New adventures in rock start here. Cover: Ruby Waters",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX34lqLRYWFxq"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX34lqLRYWFxq",
+            "id": "37i9dQZF1DX34lqLRYWFxq",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003738d5bcf2464ed5a806ac02c",
+                "width": null
+              }
+            ],
+            "name": "Ready to Rock",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDA5Mzg5MCwwMDAwMDFhZTAwMDAwMTdiODkyYWQ0ZjQwMDAwMDE3Yjg1YTgxYTg0",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX34lqLRYWFxq/tracks",
+              "total": 97
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX34lqLRYWFxq"
+          },
+          {
+            "collaborative": false,
+            "description": "Rock legends and epic songs spanning decades that continue to inspire generations.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWXRqgorJj26U"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWXRqgorJj26U",
+            "id": "37i9dQZF1DWXRqgorJj26U",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000325910874e56fc06b5f5ad4a1",
+                "width": null
+              }
+            ],
+            "name": "Rock Classics",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDAwMDE4OSwwMDAwMDA1ZTAwMDAwMTdiODM5NTExM2MwMDAwMDE3YjgzOTFmNjkz",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWXRqgorJj26U/tracks",
+              "total": 150
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWXRqgorJj26U"
+          },
+          {
+            "collaborative": false,
+            "description": "Celebrating 30 years of Ten by Pearl Jam. ",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX1rVvRgjX59F"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1rVvRgjX59F",
+            "id": "37i9dQZF1DX1rVvRgjX59F",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000360464e254b19264afa11cbd7",
+                "width": null
+              }
+            ],
+            "name": "90s Rock Anthems",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDAxNTMyMCwwMDAwMDAxZjAwMDAwMTdiODQ3YmYwNTgwMDAwMDE3YjExNWY1YTAx",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1rVvRgjX59F/tracks",
+              "total": 152
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX1rVvRgjX59F"
+          },
+          {
+            "collaborative": false,
+            "description": "It’s smooth sailing ahead. Ride the wave of these smooth classics.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXb3m918yXHxA"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXb3m918yXHxA",
+            "id": "37i9dQZF1DXb3m918yXHxA",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000035d73b2a5cb261ee9c43d9ec7",
+                "width": null
+              }
+            ],
+            "name": "Yacht Rock",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYyNDU3MDQwMSwwMDAwMDAxZjAwMDAwMTdhM2ZmMTExMjMwMDAwMDE3NTQyYzc2YmUx",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXb3m918yXHxA/tracks",
+              "total": 165
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXb3m918yXHxA"
+          },
+          {
+            "collaborative": false,
+            "description": "The great masterpieces of the genre.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX6xOPeSOGone"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6xOPeSOGone",
+            "id": "37i9dQZF1DX6xOPeSOGone",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000038f7cea2939220d6a326924fa",
+                "width": null
+              }
+            ],
+            "name": "Soft Rock",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDM0NywwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6xOPeSOGone/tracks",
+              "total": 150
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX6xOPeSOGone"
+          },
+          {
+            "collaborative": false,
+            "description": "These songs rocked the 80s. Cover: AC/DC.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX1spT6G94GFC"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1spT6G94GFC",
+            "id": "37i9dQZF1DX1spT6G94GFC",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003ce8fedf893dfb22cf1bf7d96",
+                "width": null
+              }
+            ],
+            "name": "80s Rock Anthems",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYyNjQ0MTAyMCwwMDAwMDAwZDAwMDAwMTdhYWY3MDc1Y2YwMDAwMDE3NTQ1MDA5ZWMw",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1spT6G94GFC/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX1spT6G94GFC"
+          },
+          {
+            "collaborative": false,
+            "description": "These songs rocked the 00s. Cover: Linkin Park",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX3oM43CtKnRV"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX3oM43CtKnRV",
+            "id": "37i9dQZF1DX3oM43CtKnRV",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000032cdb0982697cc0ae43b1b5b6",
+                "width": null
+              }
+            ],
+            "name": "00s Rock Anthems",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYxNzgyNjkxNywwMDAwMDAxMjAwMDAwMTc4YWRmZmFjMmIwMDAwMDE3MGM0YzVhMDY1",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX3oM43CtKnRV/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX3oM43CtKnRV"
+          },
+          {
+            "collaborative": false,
+            "description": "These songs rocked the 70s. Cover: <a href=\"spotify:artist:1dfeR4HaWDbWqFHLkxsg1d\">Queen</a>",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWWwzidNQX6jx"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWWwzidNQX6jx",
+            "id": "37i9dQZF1DWWwzidNQX6jx",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003561ca573ea307c49bacadf06",
+                "width": null
+              }
+            ],
+            "name": "70s Rock Anthems",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDM3OCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWWwzidNQX6jx/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWWwzidNQX6jx"
+          },
+          {
+            "collaborative": false,
+            "description": "Third Eye Blind-ed by the 90s / Cover: Third Eye Blind",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX3YMp9n8fkNx"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX3YMp9n8fkNx",
+            "id": "37i9dQZF1DX3YMp9n8fkNx",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003f1a9cfa02fd2a05ccf4fc89e",
+                "width": null
+              }
+            ],
+            "name": "90s Pop Rock Essentials",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYyNzA2MDkzMywwMDAwMDAyMzAwMDAwMTdhZDQ2Mzk1NTEwMDAwMDE2ZDE1MzMwNDY1",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX3YMp9n8fkNx/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX3YMp9n8fkNx"
+          },
+          {
+            "collaborative": false,
+            "description": "Soak up these laid-back jams. ",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX83I5je4W4rP"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX83I5je4W4rP",
+            "id": "37i9dQZF1DX83I5je4W4rP",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000034ea7333e8967dd2b1f368e42",
+                "width": null
+              }
+            ],
+            "name": "Beach Vibes",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDM2NSwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX83I5je4W4rP/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX83I5je4W4rP"
+          },
+          {
+            "collaborative": false,
+            "description": "Great songs by indisputable music legends.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWWGFQLoP9qlv"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWWGFQLoP9qlv",
+            "id": "37i9dQZF1DWWGFQLoP9qlv",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003a3aa0684281d8c86c6d143a5",
+                "width": null
+              }
+            ],
+            "name": "Legendary",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDM3OCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWWGFQLoP9qlv/tracks",
+              "total": 70
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWWGFQLoP9qlv"
+          },
+          {
+            "collaborative": false,
+            "description": "New music from Imagine Dragons along with the top Alternative songs right now",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWVqJMsgEN0F4"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWVqJMsgEN0F4",
+            "id": "37i9dQZF1DWVqJMsgEN0F4",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000031741e66991317b3345fbd3f6",
+                "width": null
+              }
+            ],
+            "name": "Alt NOW",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDM0NzQ0NCwwMDAwMDA0ZTAwMDAwMTdiOTg0N2MxNjMwMDAwMDE3YTYzOTNkMTk3",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWVqJMsgEN0F4/tracks",
+              "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWVqJMsgEN0F4"
+          },
+          {
+            "collaborative": false,
+            "description": "Country Music that ROCKS!!  \nCover:  Jackson Dean",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWWH0izG4erma"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWWH0izG4erma",
+            "id": "37i9dQZF1DWWH0izG4erma",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003aab8661b512185306ee01f9e",
+                "width": null
+              }
+            ],
+            "name": "Country Rocks",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDAzNjg2MCwwMDAwMDA5MTAwMDAwMTdiODVjNDljZTcwMDAwMDE3YWY3ZmZmMDQy",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWWH0izG4erma/tracks",
+              "total": 106
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWWH0izG4erma"
+          },
+          {
+            "collaborative": false,
+            "description": "The greatest Alternative Rock songs through the decades. Cover: The Killers",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX9GRpeH4CL0S"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX9GRpeH4CL0S",
+            "id": "37i9dQZF1DX9GRpeH4CL0S",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000035a48f12dd6aa5eac047d1d1b",
+                "width": null
+              }
+            ],
+            "name": "Essential Alternative",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDM0NiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX9GRpeH4CL0S/tracks",
+              "total": 225
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX9GRpeH4CL0S"
+          },
+          {
+            "collaborative": false,
+            "description": "The recent hits that keep on rocking your world. Cover: The Glorious Sons",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX4HwNAFq2CF0"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4HwNAFq2CF0",
+            "id": "37i9dQZF1DX4HwNAFq2CF0",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000381abac7b1eadf8f286f95b08",
+                "width": null
+              }
+            ],
+            "name": "Rock Favourites",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDM2MiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4HwNAFq2CF0/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX4HwNAFq2CF0"
+          },
+          {
+            "collaborative": false,
+            "description": "Please stand for your personal anthems.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXasneILDRM7B"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXasneILDRM7B",
+            "id": "37i9dQZF1DXasneILDRM7B",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000368256d98477ad125a3388dff",
+                "width": null
+              }
+            ],
+            "name": "Pure Pop Punk",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDM3OCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXasneILDRM7B/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXasneILDRM7B"
+          },
+          {
+            "collaborative": false,
+            "description": "Various sounds, various decades, but with 1 thing in common: it's pure rock & roll.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWWRktbhJiuqL"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWWRktbhJiuqL",
+            "id": "37i9dQZF1DWWRktbhJiuqL",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000034eb58a097da59ad442e26bf2",
+                "width": null
+              }
+            ],
+            "name": "Pure Rock & Roll",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDM0NywwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWWRktbhJiuqL/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWWRktbhJiuqL"
+          },
+          {
+            "collaborative": false,
+            "description": "All the standard emo anthems. Cover: Gerard Way",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX9wa6XirBPv8"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX9wa6XirBPv8",
+            "id": "37i9dQZF1DX9wa6XirBPv8",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000037c6fd6e38de56e19e85379b7",
+                "width": null
+              }
+            ],
+            "name": "Emo Forever",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTU5OTU4ODk5MSwwMDAwMDAzZDAwMDAwMTc0NmVlZjAwY2EwMDAwMDE3MDdlNjAwMzhm",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX9wa6XirBPv8/tracks",
+              "total": 80
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX9wa6XirBPv8"
+          },
+          {
+            "collaborative": false,
+            "description": "Rock this list to help you rock that last rep. Gainz.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX5OUjSS1OMgV"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5OUjSS1OMgV",
+            "id": "37i9dQZF1DX5OUjSS1OMgV",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000382894e9aedb86fd9f2f724db",
+                "width": null
+              }
+            ],
+            "name": "One More Rep",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYxMzcxMDgwMCwwMDAwMDNkYjAwMDAwMTc3YjhhOGI1MGEwMDAwMDE2ZDE1M2FjZDk5",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5OUjSS1OMgV/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX5OUjSS1OMgV"
+          }
+        ],
         "name": "Rock"
       },
       {
@@ -2331,6 +3757,729 @@ function App() {
           }
         ],
         "id": "latin",
+        "playlist": [
+          {
+            "collaborative": false,
+            "description": "Today's top Latin hits are right here, on ¡Viva Latino! Cover: Nicky Jam",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX10zKzsJ2jva"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX10zKzsJ2jva",
+            "id": "37i9dQZF1DX10zKzsJ2jva",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000359bdd3b905220d3eddf43c78",
+                "width": null
+              }
+            ],
+            "name": "¡Viva Latino!",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDQyNywwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX10zKzsJ2jva/tracks",
+              "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX10zKzsJ2jva"
+          },
+          {
+            "collaborative": false,
+            "description": "Reggaeton hits from Feid and more! Check out  <a href=\"https://open.spotify.com/show/6OB6xOp1sWazXMMa2z53CZ?si=ma-2qHVeRZuwfGwbxin6Zg&dl_branch=1\"> \"LOUD: The History of Reggaeton\" podcast </a>, only on Spotify.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWY7IeIP1cdjF"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWY7IeIP1cdjF",
+            "id": "37i9dQZF1DWY7IeIP1cdjF",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000030845543219cf57d8e0c06c16",
+                "width": null
+              }
+            ],
+            "name": "Baila Reggaeton",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDMzNTAyOCwwMDAwMDU0ZTAwMDAwMTdiOTc4YTRjZTEwMDAwMDE3YjdkOWM2NDAy",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWY7IeIP1cdjF/tracks",
+              "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWY7IeIP1cdjF"
+          },
+          {
+            "collaborative": false,
+            "description": "All-new releases by Latin artists! \nCover: Marc Anthony",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX1hVRardJ30X"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1hVRardJ30X",
+            "id": "37i9dQZF1DX1hVRardJ30X",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003ec68390ad7c1e89ce3215694",
+                "width": null
+              }
+            ],
+            "name": "New Music Friday Latin",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDAzNjgwMCwwMDAwMDMwNDAwMDAwMTdiODVjM2IzMjEwMDAwMDE3Yjg0MDkzOWQ1",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1hVRardJ30X/tracks",
+              "total": 66
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX1hVRardJ30X"
+          },
+          {
+            "collaborative": false,
+            "description": "Los éxitos del pop latino featuring Camilo & Selena Gomez. ",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWSpF87bP6JSF"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWSpF87bP6JSF",
+            "id": "37i9dQZF1DWSpF87bP6JSF",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003bbcd9bac76a5125c3ac930fc",
+                "width": null
+              }
+            ],
+            "name": "La Lista Pop",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDAyMjQwMCwwMDAwMDA1ZDAwMDAwMTdiODRlN2Y4OTIwMDAwMDE3Yjc4YzRjZTY2",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWSpF87bP6JSF/tracks",
+              "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWSpF87bP6JSF"
+          },
+          {
+            "collaborative": false,
+            "description": "Regional Mexican hits! The playlist sin fronteras. Cover: Aldo Trujillo, Polo Gonzalez",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXb0COFso7q0D"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXb0COFso7q0D",
+            "id": "37i9dQZF1DXb0COFso7q0D",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003ff638086d6bcfa091db9141d",
+                "width": null
+              }
+            ],
+            "name": "Los Que Mandan",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDQwNiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXb0COFso7q0D/tracks",
+              "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXb0COFso7q0D"
+          },
+          {
+            "collaborative": false,
+            "description": "Your favorite soon to be hits. Cover: Piso 21",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX1QnNyJOBQBv"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1QnNyJOBQBv",
+            "id": "37i9dQZF1DX1QnNyJOBQBv",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000032b8e878d4edeacaf097947f2",
+                "width": null
+              }
+            ],
+            "name": "Latin Pop Today",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDM0OTIwNywwMDAwMDE2NDAwMDAwMTdiOTg2MmE3YzIwMDAwMDE3YjdlMjNmYTE2",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1QnNyJOBQBv/tracks",
+              "total": 70
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX1QnNyJOBQBv"
+          },
+          {
+            "collaborative": false,
+            "description": "The hottest Latin hits in the US! Cover:\nJ Balvin",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX4oUPBOaEkL6"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4oUPBOaEkL6",
+            "id": "37i9dQZF1DX4oUPBOaEkL6",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003e62f65de52cc01a3a01d35ed",
+                "width": null
+              }
+            ],
+            "name": "Éxitos USA",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDA2NTg0OSwwMDAwMDEzODAwMDAwMTdiODc3ZWY0MjUwMDAwMDE3YjExZmYxNjg1",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4oUPBOaEkL6/tracks",
+              "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX4oUPBOaEkL6"
+          },
+          {
+            "collaborative": false,
+            "description": "De aquí y de allá. A mixture of sounds and artists. Cover: J Balvin, Tokischa\n",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX7qRKBHjmYIE"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX7qRKBHjmYIE",
+            "id": "37i9dQZF1DX7qRKBHjmYIE",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000342a98cff9368f2830074bdc9",
+                "width": null
+              }
+            ],
+            "name": "Mixto",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDQyMSwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX7qRKBHjmYIE/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX7qRKBHjmYIE"
+          },
+          {
+            "collaborative": false,
+            "description": "Fresh Latin music by Indie and Label artists every Wednesday. Música nueva todos los miércoles. Cover: Rorro",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXagUeYbNSnOA"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXagUeYbNSnOA",
+            "id": "37i9dQZF1DXagUeYbNSnOA",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003444b7cf2efce27728b95881b",
+                "width": null
+              }
+            ],
+            "name": "Fresh Finds: Latin",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDQyMiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXagUeYbNSnOA/tracks",
+              "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXagUeYbNSnOA"
+          },
+          {
+            "collaborative": false,
+            "description": "Una selección de R&B Latino para tus oídos. The hottest R&B Latin tracks! Cover: Mario Puglia",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX2MJVTOdWtbm"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX2MJVTOdWtbm",
+            "id": "37i9dQZF1DX2MJVTOdWtbm",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000387a3f5163b4eed558447b1c9",
+                "width": null
+              }
+            ],
+            "name": "Are & Be Latin",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDQ1NywwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX2MJVTOdWtbm/tracks",
+              "total": 85
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX2MJVTOdWtbm"
+          },
+          {
+            "collaborative": false,
+            "description": "Miami me lo confirmó featuring Nicky Jam.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX2gAVR9iO3gH"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX2gAVR9iO3gH",
+            "id": "37i9dQZF1DX2gAVR9iO3gH",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000031174a0b7280560f626a3aed3",
+                "width": null
+              }
+            ],
+            "name": "Rompiendo: Miami",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDM0OTM0NiwwMDAwMDAxNzAwMDAwMTdiOTg2NGM1ZTUwMDAwMDE3YWVmNTdhMDAx",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX2gAVR9iO3gH/tracks",
+              "total": 63
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX2gAVR9iO3gH"
+          },
+          {
+            "collaborative": false,
+            "description": "Los temas más virales que debes conocer. \nThe Latin viral tracks you'll wanna listen to.\nCover: Manuel Turizo, TINI",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX5y71ufjoyXC"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5y71ufjoyXC",
+            "id": "37i9dQZF1DX5y71ufjoyXC",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003deb0afed02131ba4ddd0d20d",
+                "width": null
+              }
+            ],
+            "name": "Viral Latino",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYyOTk5OTA3MCwwMDAwMDExYTAwMDAwMTdiODM4M2ZkZWQwMDAwMDE3YjVlYzM3ZGQ4",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5y71ufjoyXC/tracks",
+              "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX5y71ufjoyXC"
+          },
+          {
+            "collaborative": false,
+            "description": "The Latin hits of tomorrow are on Spotify today.  Cover: Maria Becerra",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWZoF06RIo9el"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWZoF06RIo9el",
+            "id": "37i9dQZF1DWZoF06RIo9el",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000032ff90b476561a0285871c456",
+                "width": null
+              }
+            ],
+            "name": "Future Hits: Latin",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDQyMiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWZoF06RIo9el/tracks",
+              "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWZoF06RIo9el"
+          },
+          {
+            "collaborative": false,
+            "description": "The most exciting new Latin artists and tracks, handpicked by our curators featuring Grupo Diez 4tro.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXbSwbJpH6lAw"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXbSwbJpH6lAw",
+            "id": "37i9dQZF1DXbSwbJpH6lAw",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000032c7c3c7ee6ccd6e1e62f3047",
+                "width": null
+              }
+            ],
+            "name": "Radar US Latin",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYyNzkxMzMyOCwwMDAwMDAxZjAwMDAwMTdiMDczMjE3NzAwMDAwMDE3YjA1OWRmYTUw",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXbSwbJpH6lAw/tracks",
+              "total": 30
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXbSwbJpH6lAw"
+          },
+          {
+            "collaborative": false,
+            "description": "The Reggaeton hits of yesterday and today all in one place! ",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX1ziQH0F90kL"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1ziQH0F90kL",
+            "id": "37i9dQZF1DX1ziQH0F90kL",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003346cbd33ff24ed3511353695",
+                "width": null
+              }
+            ],
+            "name": "Now & Then Reggaeton",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDQyNSwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1ziQH0F90kL/tracks",
+              "total": 90
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX1ziQH0F90kL"
+          },
+          {
+            "collaborative": false,
+            "description": "Lo último y lo mejor de la salsa. Cover: Luis Figueroa",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX4qKWGR9z0LI"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4qKWGR9z0LI",
+            "id": "37i9dQZF1DX4qKWGR9z0LI",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003c895d9a1d05801aaffe97c71",
+                "width": null
+              }
+            ],
+            "name": "Salsa Nation",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDQwNiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4qKWGR9z0LI/tracks",
+              "total": 150
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX4qKWGR9z0LI"
+          },
+          {
+            "collaborative": false,
+            "description": "Éxitos románticos y eternos. Foto: Emmanuel",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX7Qo2zphj7u3"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX7Qo2zphj7u3",
+            "id": "37i9dQZF1DX7Qo2zphj7u3",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f00000003bac64a07cfcbf5b62ea59470",
+                "width": null
+              }
+            ],
+            "name": "Hits Románticos",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDQyMiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX7Qo2zphj7u3/tracks",
+              "total": 250
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX7Qo2zphj7u3"
+          },
+          {
+            "collaborative": false,
+            "description": "Latin superstars like you've never heard before.  Cover: Juanes, Anitta, and Prince Royce",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWSDautEwAKZB"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWSDautEwAKZB",
+            "id": "37i9dQZF1DWSDautEwAKZB",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f0000000318d3d3898529a084e75c24f9",
+                "width": null
+              }
+            ],
+            "name": "Spotify Singles: Latino",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYyOTkwNDg1OCwwMDAwMDAwODAwMDAwMTdiN2RlNjZjZTUwMDAwMDE3NDMwYTI0NTg2",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWSDautEwAKZB/tracks",
+              "total": 32
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWSDautEwAKZB"
+          },
+          {
+            "collaborative": false,
+            "description": "¡Muévete al ritmo de esta cumbia!",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXbUMEWUyV9JB"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXbUMEWUyV9JB",
+            "id": "37i9dQZF1DXbUMEWUyV9JB",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000033d121ce193312b5e19b43198",
+                "width": null
+              }
+            ],
+            "name": "Super Cumbias",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDQwNiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXbUMEWUyV9JB/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXbUMEWUyV9JB"
+          },
+          {
+            "collaborative": false,
+            "description": "These hits were made to stay! Revive los éxitos de los últimos meses aquí.",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXbLMw3ry7d7k"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXbLMw3ry7d7k",
+            "id": "37i9dQZF1DXbLMw3ry7d7k",
+            "images": [
+              {
+                "height": null,
+                "url": "https://i.scdn.co/image/ab67706f000000032181def5b5f145253188ac87",
+                "width": null
+              }
+            ],
+            "name": "Latin Hit Mix",
+            "owner": {
+              "display_name": "Spotify",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/user/spotify"
+              },
+              "href": "https://api.spotify.com/v1/users/spotify",
+              "id": "spotify",
+              "type": "user",
+              "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": null,
+            "snapshot_id": "MTYzMDQ2NDQyMiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+            "tracks": {
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXbLMw3ry7d7k/tracks",
+              "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXbLMw3ry7d7k"
+          }
+        ],
+    
         "name": "Latin"
       },
       {
@@ -2598,25 +4747,14 @@ function App() {
     return <div className="genre"
       onClick={()=>{
           expandView();
-          //  GET  playlist 
-          const getPlaylist = async () => {
-            const playlistt = await __getPlayList(genre.id);
-            return playlistt;
-          }
-          // 🧲 get playlist call
-          getPlaylist()
-          .then((playlistData)=>{
-            let playlistTracks = playlistData.playlists.items
-            // 📦 setSTATE Playlist tracks data 
-            //setCurrentPlaylistTracks(playlistTracks);
+          let playlistTracks = genre.playlist;
 
-            // 💀 Playlist Tracks - COMPONENT
-            const playlistTracksHtmlTemp = playlistTracks.map(track => {
-              return <TrackSmallThumbnail track={track}/>
-            })
-            // 📦 setSTATE Playlist Track markup
-            setPlaylistTracksHtml(playlistTracksHtmlTemp)
+          // 💀 Playlist Tracks - COMPONENT
+          const playlistTracksHtmlTemp = playlistTracks.map(track => {
+            return <TrackSmallThumbnail track={track}/>
           })
+          // 📦 setSTATE Playlist Track markup
+          setPlaylistTracksHtml(playlistTracksHtmlTemp)
           
       }}>
         <div className="genre-icon" style={{backgroundImage: `url(${genre.icons[0].url})`}}></div>
@@ -2700,7 +4838,6 @@ function App() {
         </div>
       </div>
     </div>
-    
   );
 }
 function TrackSmallThumbnail(props) {
