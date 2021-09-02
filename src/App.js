@@ -76,6 +76,7 @@ function App() {
   // model
   const [isExpandModel, setIsExpandModel] = useState(true)
   const [modelClass, setModelClass] = useState('')
+
   //Genres
   const [genres, setGenres] = useState(genreList)
   //
@@ -84,7 +85,6 @@ function App() {
 
   // Featured Playlist
   const [featuredPlaylist, setFeaturedPlaylist] = useState(featuredPlaylistList);
-  const [featuredPlaylistHTML, setFeaturedPlaylistHTML] = useState(null);
 
   //FUNCTIONS
 
@@ -102,6 +102,7 @@ function App() {
 
   }
   // 💀 Genre strip HTML
+  console.log(featuredPlaylist)
   const genresHtml = genres.map(genre => {
     if(genre.playlist)
       return <div className="genre"
@@ -126,7 +127,8 @@ function App() {
     }
   })
 
-  const genresHtml2 = genres.map(() => {
+  const moodboardHtml = featuredPlaylist.map((playlist) => {
+    return <MoodStrip playlist={playlist}/>
   })
 
   return (
@@ -145,7 +147,7 @@ function App() {
         </div>
         
         <div className="shelf-divider"></div>
-        {featuredPlaylistHTML}
+        {moodboardHtml}
       </div>
       <div className={`view playlist ${viewClass}`}>
         <div className="view__head">

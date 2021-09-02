@@ -444,4 +444,4 @@ const featuredPlaylistList = {
     }
   }
 
-  export default featuredPlaylistList.playlists;
+  export default featuredPlaylistList.playlists.items;
