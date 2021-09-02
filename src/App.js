@@ -103,7 +103,8 @@ function App() {
   }
   // 💀 Genre strip HTML
   console.log(featuredPlaylist)
-  const genresHtml = genres.map(genre => {
+  const genresHtml = genres.map((genre,i) => {
+
     if(genre.playlist)
       return <div className="genre"
       onClick={()=>{
@@ -121,14 +122,11 @@ function App() {
         <div className="genre-icon" style={{backgroundImage: `url(${genre.icons[0].url})`}}></div>
         {genre.name}
       </div>
-    else{
-      console.log(genre)
-      debugger
-    }
   })
 
-  const moodboardHtml = featuredPlaylist.map((playlist) => {
-    return <MoodStrip playlist={playlist}/>
+  const moodboardHtml = featuredPlaylist.map((playlist,i) => {
+    if (i<5)
+      return <MoodStrip playlist={playlist}/>
   })
 
   return (

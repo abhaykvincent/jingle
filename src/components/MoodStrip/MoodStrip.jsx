@@ -2,7 +2,7 @@ import React from 'react'
 
 function MoodStrip(props) {
     console.log(props)
-    let name = props.playlist.name;
+    let name = props.playlist.track.album.name;
     return (
         <div className="mood">
           <div className="label-sub"><h3>{name}</h3></div>
