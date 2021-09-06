@@ -18,6 +18,21 @@ export const _getToken = async () => {
     });
     const data = await result.json();
     const token =data.access_token;
-    console.log(token)
     return token;
 }
+
+export const getTracksByPlaylistId = async (id) => {
+
+    // #️⃣  receving token from spotify
+    const token = await _getToken();
+    // 🕊 fetch call - playlist
+    const result = await fetch(`https://api.spotify.com/v1/playlists/${id}/tracks`, {
+      method: 'GET',
+       headers: { 'Authorization' : 'Bearer ' + token}
+    });
+  
+    //calling playlist API 🕊   and parsing
+    const playlist = await result.json();
+    //PLAYLIST ARRAY
+    return playlist;
+  }

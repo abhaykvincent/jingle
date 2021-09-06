@@ -1,29 +1,10 @@
-import { useEffect, useState } from 'react'
+import {useState,useEffect } from 'react'
 import './App.scss'
 import MoodStrip from './components/MoodStrip/MoodStrip';
 import genreList from './data/genre'
 import featuredPlaylistList from './data/featured-playlist'
-import {_getToken} from './services/spotify'
+import {getTracksByPlaylistId} from './services/spotify'
     
-    
-    // Featured Playlists
-    const __getPlayListById = async (id) => {
-
-    // #️⃣  receving token from spotify
-    const token = await _getToken();
-    // 🕊 fetch call - playlist
-    const result = await fetch(`https://api.spotify.com/v1/playlists/${id}`, {
-      method: 'GET',
-       headers: { 'Authorization' : 'Bearer ' + token}
-    });
-
-    //calling playlist API 🕊   and parsing
-    const playlist = await result.json();
-    console.log(playlist)
-    //
-    //PLAYLIST ARRAY
-    return playlist;
-  }
 
     
 
@@ -40,14 +21,26 @@ function App() {
   const [modelClass, setModelClass] = useState('')
 
   //Genres
-  const [genres, setGenres] = useState(genreList)
+  // eslint-disable-next-line
+  const [genres, setGenres] = useState(genreList) 
+  const [genreHTML, setGenreHTML] = useState() 
   //
+  // eslint-disable-next-line
   const [currentPlaylist, setCurrentPlaylist] = useState(null);
+  // eslint-disable-next-line
   const [playlistTracksHtml, setPlaylistTracksHtml] = useState();
 
   // Featured Playlist
+  // eslint-disable-next-line
   const [featuredPlaylist, setFeaturedPlaylist] = useState(featuredPlaylistList);
 
+
+  const [currentTrack, setCurrentTrack] = useState();
+
+  const [songsList, setSongsList] = useState();
+  const [songsListHTML, setSongsListHTML] = useState();
+  const getCurrentTrackToState =  (id) => {
+  }
   //FUNCTIONS
 
   const expandView =  () => {
@@ -62,34 +55,42 @@ function App() {
     // reaction class CHANGE
     setModelClass(isExpandModel ? "expand" : '')
 
+  
   }
-  // 💀 Genre strip HTML
-  console.log(featuredPlaylist)
-  const genresHtml = genres.map((genre,i) => {
-
-    if(genre.playlist)
-      return <div className="genre"
-      onClick={()=>{
-          expandView();
-          let playlistTracks = genre.playlist;
-
-          // 💀 Playlist Tracks - COMPONENT
-          const playlistTracksHtmlTemp = playlistTracks.map(track => {
-            return <TrackSmallThumbnail track={track}/>
-          })
-          // 📦 setSTATE Playlist Track markup
-          setPlaylistTracksHtml(playlistTracksHtmlTemp)
-          
-      }}>
-        <div className="genre-icon" style={{backgroundImage: `url(${genre.icons[0].url})`}}></div>
-        {genre.name}
-      </div>
-  })
 
   const moodboardHtml = featuredPlaylist.map((playlist,i) => {
     if (i<5)
-      return <MoodStrip playlist={playlist}/>
+      return <MoodStrip playlist={playlist} expandView={expandView}  TrackSmallThumbnail={TrackSmallThumbnail} setPlaylistTracksHtml={setPlaylistTracksHtml} expandModel={expandModel}  setCurrentTrack={setCurrentTrack}/>
+    else return ""
   })
+
+
+  useEffect(() => {
+
+    const genresHtmlTemp = genres.map((genre,i) => {
+
+      if(genre.playlist)
+        return <div className="genre"
+        onClick={()=>{
+            expandView();
+  
+            let playlistTracks = genre.playlist;
+            // 💀 Playlist Tracks - COMPONENT
+            const playlistTracksHtmlTemp = playlistTracks.map(track => {
+              return <PlaylistSmallThumbnail track={track} setPlaylistTracksHtml={setPlaylistTracksHtml} setSongsListHTML={setSongsListHTML} setSongsList={setSongsList} expandView={expandView} expandModel={expandModel} setCurrentTrack={setCurrentTrack}/>
+            })
+            // 📦 setSTATE Playlist Track markup
+            setPlaylistTracksHtml(playlistTracksHtmlTemp)
+            
+        }}>
+          <div className="genre-icon" style={{backgroundImage: `url(${genre.icons[0].url})`}}></div>
+          {genre.name}
+        </div>
+      else return ""
+    })
+    console.log("songs updatyed")
+    setGenreHTML(genresHtmlTemp)
+  },[])
 
   return (
     <div className="App">
@@ -102,7 +103,7 @@ function App() {
         <div className="genres">
           <div className="label-sub"><h3>Top Genres</h3></div>
           <div className="genres-list">
-            {genresHtml}
+            {genreHTML}
           </div>
         </div>
         
@@ -112,11 +113,10 @@ function App() {
       <div className={`view playlist ${viewClass}`}>
         <div className="view__head">
           <div className="back" 
-          onClick={()=>{expandView();}}>)</div>
+          onClick={()=>{expandView();}}></div>
         </div>
         <div className="view__body">
-          <div className="playlist" 
-          onClick={()=>{expandModel()}}>
+          <div className="playlist" >
             {playlistTracksHtml}
           </div>
         </div>
@@ -124,18 +124,18 @@ function App() {
       <div className={`model player ${modelClass}`}>
         <div className="model__head">
           <div className="back" 
-          onClick={()=>{expandModel()}}>)</div></div>
+          onClick={()=>{expandModel()}}></div></div>
         <div className="model__body">
           <div className="track">
-            <div className="album-artwork">
+            <div className="album-artwork" style={{backgroundImage:`url(${currentTrack?currentTrack.album.images[0].url:''})`}}>
             </div>
             <div className="track-name">
               <div className="spotify-logo">
               
               </div>
               
-              <p>Track Name ipsm</p>
-              <p className="artist">Lorem ipsum</p>
+              <p className="track-title">{currentTrack?currentTrack.name:''}</p>
+              <p className="artist">{currentTrack?currentTrack.artists[0].name:''}</p>
             </div>
             <div className="play-controls">
               <div className="progress-bar">
@@ -169,22 +169,72 @@ function App() {
     </div>
   );
 }
+function PlaylistSmallThumbnail(props) {
+  let track = props.track;
+  
+  return (
+    <div className="track" onClick={()=>{
+      let songsListHTMLtemp ;
+      props.expandView()
+
+      getTracksByPlaylistId(track.id)
+      .then(songs=>{
+         songsListHTMLtemp = songs.items.map((song,i) => {
+
+          return <div className="track" onClick={() => {
+            props.expandModel()
+            props.setCurrentTrack(song.track)
+            debugger
+          }}>
+
+            <div className="album-artwork" style={{backgroundImage:`url(${song.track.album.images[1].url})`}}></div>
+            <div className="track-name">{song.track.name.slice(0, 30)}</div>
+          </div>
+        })
+
+        props.setPlaylistTracksHtml(songsListHTMLtemp)
+        props.expandView()
+      })
+      .catch(() => {
+        console.log('error')
+        return "" })
+    }
+
+      }>
+      <div className="album-artwork" style={{backgroundImage:`url(${track.images[0].url})`}}></div>
+      <div className="track-name">
+        <p>{track.name}Test</p>
+        <p className="artist">{/* {track.artists[0].name} */}</p>
+      </div>
+      <div className="play-button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+        <path xmlns="http://www.w3.org/2000/svg" id="Video_Play" data-name="Video Play" d="M12.5,0A12.5,12.5,0,1,0,25,12.5,12.52,12.52,0,0,0,12.5,0Zm5.26,12.92-8,5A.56.56,0,0,1,9.5,18a.5.5,0,0,1-.24-.06A.51.51,0,0,1,9,17.5V7.5a.51.51,0,0,1,.26-.44.49.49,0,0,1,.51,0l8,5a.49.49,0,0,1,0,.84Z" fill="#0e1d25"/>
+        </svg>
+      </div>
+    </div>
+  )
+}
 function TrackSmallThumbnail(props) {
   let track = props.track;
+  console.log('testttttt')
   return (
-      
-    <div className="track">
-    <div className="album-artwork"></div>
-    <div className="track-name">
-      <p>{track.name}</p>
-      <p className="artist">{track.description}</p>
+    <div className="track" onClick={()=>{
+      props.expandModel()
+      props.setCurrentTrack(track)
+    }
+
+      }>
+      <div className="album-artwork" style={{backgroundImage:`url(${track.album.images[0].url})`}}></div>
+      <div className="track-name">
+        <p>{track.name}</p>
+        <p className="artist">{track.artists[0].name}</p>
+      </div>
+      <div className="play-button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+        <path xmlns="http://www.w3.org/2000/svg" id="Video_Play" data-name="Video Play" d="M12.5,0A12.5,12.5,0,1,0,25,12.5,12.52,12.52,0,0,0,12.5,0Zm5.26,12.92-8,5A.56.56,0,0,1,9.5,18a.5.5,0,0,1-.24-.06A.51.51,0,0,1,9,17.5V7.5a.51.51,0,0,1,.26-.44.49.49,0,0,1,.51,0l8,5a.49.49,0,0,1,0,.84Z" fill="#0e1d25"/>
+        </svg>
+      </div>
     </div>
-    <div className="play-button">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
-    <path xmlns="http://www.w3.org/2000/svg" id="Video_Play" data-name="Video Play" d="M12.5,0A12.5,12.5,0,1,0,25,12.5,12.52,12.52,0,0,0,12.5,0Zm5.26,12.92-8,5A.56.56,0,0,1,9.5,18a.5.5,0,0,1-.24-.06A.51.51,0,0,1,9,17.5V7.5a.51.51,0,0,1,.26-.44.49.49,0,0,1,.51,0l8,5a.49.49,0,0,1,0,.84Z" fill="#0e1d25"/>
-    </svg>
-    </div>
-  </div>
   )
 }
 

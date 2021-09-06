@@ -1,42 +1,65 @@
-import React from 'react'
+import { useEffect, useState } from 'react'
 import {_getToken} from '../../services/spotify'
-
+import {getTracksByPlaylistId} from '../../services/spotify'
 // Featured Playlists
-const getTracksByPlaylistId = async (id) => {
 
-  // #️⃣  receving token from spotify
-  const token = await _getToken();
-  // 🕊 fetch call - playlist
-  const result = await fetch(`https://api.spotify.com/v1/playlists/${id}/tracks`, {
-    method: 'GET',
-     headers: { 'Authorization' : 'Bearer ' + token}
-  });
 
-  //calling playlist API 🕊   and parsing
-  const playlist = await result.json();
-  //
-  console.log(playlist)
-  //PLAYLIST ARRAY
-  return playlist;
-}
+
 function MoodStrip(props) {
 
-  
-  let name = props.playlist.name;
-  let songsList = getTracksByPlaylistId(props.playlist.id);
+  const [songsList, setSongsList] = useState()
+  const [songsListHTML, setSongsListHTML] = useState()
 
-  console.log(songsList)
-  /* const songsListHTML = songsList.map((song,i) => {
-    console.log(song)
-    return 
-    <div className="song">Pop Lorem, ipsum.</div>
-  })
-*/
-  getTracksByPlaylistId(props.playlist.id) 
+  let name = props.playlist.name;
+  let expandView=props.expandView;
+  let TrackSmallThumbnail=props.TrackSmallThumbnail
+  let setPlaylistTracksHtml=props.setPlaylistTracksHtml
+
+  useEffect(() => {
+
+    if(!songsList){
+      getTracksByPlaylistId(props.playlist.id)
+      .then(songs=>{
+        setSongsList(songs.items)
+        let songsListHTMLtemp = songs.items.map((song,i) => {
+          return <div className="song" onClick={() => {
+            props.expandModel()
+            console.log(song)
+            props.setCurrentTrack(song.track)
+          }}>
+            <div className="song-image" style={{backgroundImage:`url(${song.track.album.images[1].url})`}}></div>
+            <div className="song-name">{song.track.name.slice(0, 30)}</div>
+          </div>
+        })
+        setSongsListHTML(songsListHTMLtemp)
+      })
+
+
+    }
+
+  },[songsList,props]);
+
+  
+  
+ 
+
     return (
         <div className="mood">
-          <div className="label-sub"><h3>{name}</h3></div>
+          <div className="label-sub" onClick={()=>{
+          expandView();
+          let playlistTracks = songsList;
+
+          // 💀 Playlist Tracks - COMPONENT
+          const playlistTracksHtmlTemp = playlistTracks.map(track => {
+
+            return <TrackSmallThumbnail track={track.track} expandModel={props.expandModel} setCurrentTrack={props.setCurrentTrack}/>
+          })
+          // 📦 setSTATE Playlist Track markup
+          setPlaylistTracksHtml(playlistTracksHtmlTemp)
+          
+      }}><h3>{name}</h3></div>
           <div className="mood-strip">
+            {songsListHTML}
           </div>
         </div>
     )
