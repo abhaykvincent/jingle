@@ -13,7 +13,6 @@ function App() {
 
   // 📦 STATES
 
-  // view
   const [isExpandView, setIsExpandView] = useState(true)
   const [viewClass, setViewClass] = useState('')
   // model
@@ -58,9 +57,15 @@ function App() {
   
   }
 
+  const nextTrack =  () => {
+    featuredPlaylist.forEach((track,i)=>{
+
+    })
+  }
+
   const moodboardHtml = featuredPlaylist.map((playlist,i) => {
     if (i<5)
-      return <MoodStrip playlist={playlist} expandView={expandView}  TrackSmallThumbnail={TrackSmallThumbnail} setPlaylistTracksHtml={setPlaylistTracksHtml} expandModel={expandModel}  setCurrentTrack={setCurrentTrack}/>
+      return <MoodStrip playlist={playlist} expandView={expandView}  TrackSmallThumbnail={TrackSmallThumbnail} setPlaylistTracksHtml={setPlaylistTracksHtml} expandModel={expandModel}  setCurrentTrack={setCurrentTrack} />
     else return ""
   })
 
@@ -153,7 +158,7 @@ function App() {
                     <path xmlns="http://www.w3.org/2000/svg" id="Video_Play" data-name="Video Play" d="M12.5,0A12.5,12.5,0,1,0,25,12.5,12.52,12.52,0,0,0,12.5,0Zm5.26,12.92-8,5A.56.56,0,0,1,9.5,18a.5.5,0,0,1-.24-.06A.51.51,0,0,1,9,17.5V7.5a.51.51,0,0,1,.26-.44.49.49,0,0,1,.51,0l8,5a.49.49,0,0,1,0,.84Z" fill="#0e1d25"/>
                   </svg>
                   </div>
-                  <div className="control next">
+                  <div className="control next"  onClick={()=>nextTrack()}>
                   <svg width="327" height="327" viewBox="0 0 327 327" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M102.605 75.993C102.486 69.8357 109.077 65.8586 114.469 68.8341L269.731 154.517C275.123 157.492 275.271 165.189 269.999 168.37L118.164 259.99C112.891 263.172 106.152 259.453 106.033 253.295L102.605 75.993Z" fill="black"/>
                     <line x1="271.5" y1="66.5" x2="271.5" y2="258.5" stroke="black" stroke-width="33" stroke-linecap="round"/>
@@ -184,7 +189,6 @@ function PlaylistSmallThumbnail(props) {
           return <div className="track" onClick={() => {
             props.expandModel()
             props.setCurrentTrack(song.track)
-            debugger
           }}>
 
             <div className="album-artwork" style={{backgroundImage:`url(${song.track.album.images[1].url})`}}></div>
