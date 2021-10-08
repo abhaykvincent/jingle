@@ -13,6 +13,7 @@ function App() {
 
   // 📦 STATES
 
+  // view
   const [isExpandView, setIsExpandView] = useState(true)
   const [viewClass, setViewClass] = useState('')
   // model
