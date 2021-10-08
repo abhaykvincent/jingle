@@ -29,11 +29,15 @@ body{
         z-index: 90;
         .search{
             width: 100%;
+            background-image: url('./images/Jingle.png');
+            background-size: auto 100% ;
+            background-repeat: no-repeat;
+            background-position: center center;
             #search-home{
-                height: 8px * 4;
+                height: 8px * 3;
                 width: calc( 100% - 8px * 8 );
                 margin-bottom:  8px * 2;
-                background: rgba(255, 255, 255, 0.1);
+                background: rgba(255, 255, 255, 0);
 
                 border: 0px;
                 border-radius: 8px;
